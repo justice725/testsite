@@ -16,14 +16,9 @@ $(function(){
         var WHeight = $('body').height(); // pc 기준 8230
         var ht = $(window).scrollTop();
         var sec1Offset = $('.page_wrap').offset().top; // pc 기준 766
-        var header = $("#hd").height(); // pc 기준 100
         var wH = $(window).height();
 
-        var sec0Ht = $('.section0').height();
-        var sec0_1 = $('.section0_1').offset().top;
         var sec0_2 = $(".section0_2").offset().top; // 두번째 brand mission 애니메이션 높이
-        var sec0_3 = $('.section0_3').offset().top;
-        var sec0_3Height = $('.section0_3').height();
         var animate_1 = $(".animate_1").offset().top; // 첫번째 카드 애니메이션 높이 
         var animate_2 = $(".animate_2").offset().top; // 두번째 카드 애니메이션 높이 
         var animate_3 = $(".animate_3").offset().top; // 세번째 카드 애니메이션 높이 
@@ -43,8 +38,9 @@ $(function(){
         var value_3 = $(".value_3").offset().top; // we are cenno 세번째 카드 애니메이션 높이
 
         var text_animate_4 = $(".text_animate_4").offset().top; // 하단 첫번째 텍스트 애니메이션 높이
+        var text_animate_4_wrap = $(".text_animate_4_wrap").offset().top
         var text_animate_5 = $(".text_animate_5").offset().top; // 하단 두번째 텍스트 애니메이션 높이
-        var text_animate_3 = $(".text_animate_3").offset().top; // 하단 두번째 텍스트 애니메이션 높이
+        var text_animate_5_wrap = $(".text_animate_5_wrap").offset().top
 
 
         // 첫번째 brandmission 텍스트 좌우스크롤 애니메이션
@@ -60,23 +56,18 @@ $(function(){
         // 두번째 brandmission 텍스트 좌우스크롤 애니메이션 끝
 
         // 두번째 카드애니메이션 텍스트 애니메이션
-        if(ht-(text_animate_4-(wH/2))>= 1 ) {
+        if(ht-(text_animate_4_wrap-(wH/2))>= 1 ) {
             $(".text_animate_4").stop().css({transform:"translateY(0)"});
+        } else {
+            $(".text_animate_4").stop().css({transform:"translateY(120%)"});
         }
 
-        if(ht-(text_animate_5-(wH/2))>= 1 ) {
+        if(ht-(text_animate_5_wrap-(wH/2))>= 1 ) {
             $(".text_animate_5").stop().css({transform:"translateY(0)"});
+        } else {
+            $(".text_animate_5").stop().css({transform:"translateY(120%)"});
         }
         // 두번째 카드애니메이션 텍스트 애니메이션 끝
-
-        if(ht > (WHeight / 2) + (header * 5)) {
-            $(".tit_holder_left .txt_mask:nth-child(2) span").delay(300).queue(function(next){
-                $(this).stop().css({transform:"translateY(0)"});
-                next();
-            });
-        } else {
-            $('.tit_holder_left .txt_mask:nth-child(1) span, .tit_holder_left .txt_mask:nth-child(2) span').stop().css({transform:"translateY(120%)"});
-        }
 
         if(ht > sec1Offset / 2) {
             $(".tit_holder .txt_mask:nth-child(1) span").stop().css({transform:"translateY(0)"});
