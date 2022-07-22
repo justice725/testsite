@@ -2,6 +2,9 @@
 
 /* style css */
 
+        .main {
+            overflow-x: hidden;
+        }
         /* page_wrap */
         .page_wrap {
             width: 100%;
