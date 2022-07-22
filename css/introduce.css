@@ -666,3 +666,246 @@
         width: 100%;
     }
 }
+
+@media only screen and (max-width:766px) {
+    .sec0_container {
+        position: relative;
+        width: 100%;
+        height: auto;
+        font-size: 0;
+        padding: 0 3.50467vw;
+    }
+
+    .container_columns {
+        padding: 35.28037vw 0 0;
+    }
+
+    .tit_holder {
+        margin: 0;
+    }
+
+    .tit_holder .txt_mask {
+        font-size: 9.34579vw;
+    }
+
+    .sec0_bg_txt {
+        top: 35.046373vw;
+        left: -2.33645vw;
+        
+    }
+
+    .sec0_bg_txt p {
+        font-size: 23.36449vw;
+    }
+
+    .section0_1 {
+        position: relative;
+        padding: 0 3.50467vw;
+    }
+
+    .sec0_1_container {
+        margin-top: 0;
+    }
+
+    .animate_1 {
+        padding-top: 0;
+    }
+
+    .col1-3 {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .col1-3 .txt_motion {
+        transform: rotate(0);
+        left: 0;
+        margin-top: 11.82243vw;
+        position: static;
+    }
+
+    .col1-3 .txt_motion span {
+        font-size: 14.01869vw;
+    }
+
+    .tech_animate {
+        margin-top: 0;
+        width: 100%;
+    }
+
+    .card1_1 {
+        margin-top: 0;
+    }
+
+    .img_container {
+        justify-content: flex-end;
+    }
+
+    .card1 .text_wrap > div {
+        margin: 0;
+    }
+
+    .card1 .text_wrap .text_animate_1 {
+        margin: 4.6729vw 0 1.16822vw;
+    }
+
+    .card1 .text_wrap > div:nth-child(1) p:nth-child(1) {
+        margin: 0;
+        font-size: 4.6729vw;
+    }
+
+    .text_animate_2 {
+        margin: 0;
+        font-size: 7.00935vw;
+    }
+
+    .text_animate_3 p {
+        margin: 2.33645vw;
+        font-size: 4.6729vw;
+    }
+
+    .card1 .text_wrap p{
+        transform: translateY(121%);
+    }
+
+    .container_columns {
+        
+    }
+
+    .animate_2{
+        padding: 0;
+    }
+
+    .data_animate {
+        margin: 0;
+        width: 100%;
+    }
+
+    .card1_2 {
+        margin-top: 0;
+    }
+
+    .solu_animate {
+        margin: 0;
+        width: 100%;
+    }
+
+    .card1_3 {
+        margin-top: 0;
+    }
+
+    .section0_2 .sec0_bg_txt {
+        left:-122.33645vw;    
+    }
+
+    .tit_holder_left {
+        padding-left: 0;
+    }
+
+    .section0_2 {
+        padding-bottom: 0;
+        padding: 8vw 3.50467vw;
+    }
+
+    .tit_holder_left .txt_mask {
+        font-size: 7.34579vw;
+    }
+    
+    .container_columns {
+        padding: 0;
+    }
+
+    .section0_3 .container_columns .col1-3:nth-child(1), .section0_3 .container_columns .col1-3:nth-child(3){
+        margin-left: 0;
+    }
+
+    .section0_3 .txt_wrap {
+        margin-top: 2.52312vw;
+    }
+
+    .section0_3 .txt_wrap .txt_wrap_fr span {
+        font-size: 6.00935vw;
+    }
+    
+    .section0_3 {
+        padding-bottom: 18.95463vw;
+    }
+
+    .sec5_top_flex {
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 11.798621vw;
+    }
+
+    .who_we_are p {
+        font-size: 6.11643vw;
+    }
+
+    .who_we_are h2 {
+        font-size: 8.16234vw;
+        line-height: 21.2316vw;
+    }
+
+    .comment {
+        width: 100%;
+        
+    }
+
+    .comment p {
+        font-size: 4.231546vw;
+        line-height: 7.23156vw;
+    }
+
+    .sec5_bot_flex {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .Cenno_value {
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 5.11684vw;
+    }
+
+    .value_1, .value_2, .value_3 {
+        width: 100%;
+    }
+
+    .value_1, .value_2 {
+        margin-bottom: 5.11684vw;
+    }
+
+    .section0_end {
+        padding: 18.15623vw 0;
+    }
+
+    .section0_end .container {
+        width: 100%;
+        padding: 6.123564vw;
+        justify-content: center;
+    }
+
+    .section0_end .container .adit_center {
+        width: 100%;
+        text-align: center;
+    }
+
+    .section0_end .container .adit_center .adit_right h4 {
+        font-size: 11.123645vw;
+    }
+
+    .section0_end .container .adit_center .adit_right span {
+        font-size: 4.448796vw;
+    }
+
+    .section0_end .container .adit_center .adit_right a {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section0 {
+        padding: 6.124568vw 0;
+    }
+}
