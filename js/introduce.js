@@ -312,6 +312,32 @@ $(function(){
             } else {
                 $(".text_animate_5").stop().css({transform:"translateY(120%)"});
             }
+            // 
+
+
+            // we are cenno 첫번째 카드 애니메이션 시작
+            if(ht-(value_1-(wH/2))>= 1) {
+                $('.value_1').stop().css({opacity:"1", transform:"translateY(0)"});
+            } else {
+                $('.value_1').stop().css({opacity:"0", transform:"translateY(20%)"});
+            }
+            // we are cenno 첫번째 카드 애니메이션 끝
+
+            // we are cenno 두번째 카드 애니메이션 시작
+            if(ht-(value_2-(wH/2))>= 1) {
+                $('.value_2').stop().css({opacity:"1", transform:"translateY(0)"});
+            } else {
+                $('.value_2').stop().css({opacity:"0", transform:"translateY(20%)"});
+            }
+            // we are cenno 두번째 카드 애니메이션 끝
+
+            // we are cenno 세번째 카드 애니메이션 시작
+            if(ht-(value_3-(wH/2))>= 1) {
+                $('.value_3').stop().css({opacity:"1", transform:"translateY(0)"});
+            } else {
+                $('.value_3').stop().css({opacity:"0", transform:"translateY(20%)"});
+            }
+            // we are cenno 두번째 카드 애니메이션 끝
         } 
     });
 
