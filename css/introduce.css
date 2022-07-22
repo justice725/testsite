@@ -250,7 +250,7 @@
         .section0_end {
             width: 100%;
             height: auto;
-            background-image: url(./img/footer_bg.png);
+            background-image: url(../img/footer_bg.png);
             background-repeat: no-repeat;
             background-size:cover; 
             background-attachment: fixed;
@@ -376,7 +376,7 @@
             background-position: 50% 50%;
             background-size: cover;
             background-repeat: no-repeat;
-            background-image: url(./img/technology.png);
+            background-image: url(../img/technology.png);
         }
 
         .card1_2 .img_wrap > div {
@@ -385,7 +385,7 @@
             background-position: 50% 50%;
             background-size: cover;
             background-repeat: no-repeat;
-            background-image: url(./img/data.png);
+            background-image: url(../img/data.png);
         }
 
         .card1_3 .img_wrap > div {
@@ -394,7 +394,7 @@
             background-position: 50% 50%;
             background-size: cover;
             background-repeat: no-repeat;
-            background-image: url(./img/solution.png);
+            background-image: url(../img/solution.png);
         }
 
         .card2 .img_wrap > div {
@@ -483,7 +483,7 @@
 
 .value_1 {
     box-sizing: border-box;
-    background-image: url(./img/value_1.png);
+    background-image: url(../img/value_1.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 105%;
@@ -492,7 +492,7 @@
 }
 .value_2 {
     box-sizing: border-box;
-    background-image: url(./img/value_2.png);
+    background-image: url(../img/value_2.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 105%;
@@ -501,7 +501,7 @@
 }
 .value_3 {
     box-sizing: border-box;
-    background-image: url(./img/value_3.png);
+    background-image: url(../img/value_3.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 105%;
