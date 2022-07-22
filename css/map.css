@@ -1,0 +1,238 @@
+@charset "utf-8";
+
+body, html {
+    overflow-x: hidden;
+}
+
+.page_wrap {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding-top: 340px;
+    margin-top: 100px;
+    flex-direction: column;
+}
+
+.sec0_bg_txt {
+    position: absolute;
+    z-index: -1;
+    top: 215px;
+}
+
+.sec0_bg_txt p {
+    color: #f2f2f2;
+    white-space: nowrap;
+    font-size: 410px;
+    line-height: 0;
+    font-family: 'NanumGothicExtraBold';
+}
+
+.paralax_title {
+    margin-left: 15%;
+}
+
+.page_center {
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 100px;
+    position: relative;
+}
+
+.map_flex {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    margin-top: 200px;
+    padding-top: 40px;
+    border-top: 1px solid #dcdcdc;
+}
+
+.map_flex .left_title {
+    width: 30%;
+    display: flex;
+    justify-content:left;
+    align-items:inherit;
+    position: relative;
+
+    transform: translateY(20%);
+    opacity: 0;
+    transition: transform 0.6s, opacity 1s;
+}
+
+.map_flex .left_title h2 {
+    font-size: 40px;
+    font-family: 'NanumGothicExtraBold';
+    
+}
+
+.map_flex .right_box {
+    width: 70%;
+    height: auto;
+}
+
+.map_flex .right_box .right_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.6s, opacity 1s;
+    transform: translateY(30%);
+    opacity: 0;
+}
+
+.map_flex .right_box .right_bot {
+    transition: transform 0.6s, opacity 1s;
+    transform: translateY(20%);
+    opacity: 0;
+}
+
+.map_flex .right_box .right_top .txt_box {
+    width: 70%;
+    height: auto;
+}
+
+.map_flex .right_box .right_top .txt_box .Address, .map_flex .right_box .right_top .txt_box .call, .map_flex .right_box .right_top .txt_box .fax {
+    display: flex;
+}
+.map_flex .right_box .right_top .txt_box div {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.map_flex .right_box .right_top .txt_box .h {
+    width: 20%;
+}
+
+.map_flex .right_box .right_top .txt_box .call .t {
+    justify-content: flex-start;
+}
+
+.map_flex .right_box .right_top .map_link_box {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.map_flex .right_box .right_top .map_link_box a {
+
+}
+
+#map {
+    background-color: aquamarine;
+}
+
+.map_link_box .link_btn {
+    width: 260px;
+    height: 60px;
+    border: 1px solid #9a9a9a;
+    box-sizing: border-box;
+    font-size: 1.05em;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'NanumGothic';
+    font-weight: 600;
+}
+
+.map_link_box .link_btn i {
+    width: 35px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+.context_us {
+    padding-top: 60px;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    box-sizing: border-box;
+    height: auto;
+    justify-content:flex-start;
+    /* align-items: center; */
+    flex-direction: column;
+    position: relative;
+    padding-bottom: 110px;
+}
+
+.context_title {
+    font-size: 30px;
+    font-family: 'NanumGothicBold';
+    color: #333;
+    margin-bottom: 30px;
+    transition: transform 0.6s, opacity 1s;
+    transform: translateY(200%);
+    
+}
+
+.context_us table {
+    border-top: 2px solid #414243;
+    border-bottom: 2px solid #414243;
+    width: 100%;
+    height: 100%;
+
+    border-collapse: collapse;
+    border-spacing: 0;
+    display: table;
+
+    margin-bottom: 60px;
+
+    transition: transform 0.6s, opacity 1s;
+    transform: translateY(100%);
+    opacity: 0;
+}
+
+tbody {
+    display: table-row-group;
+}
+
+table th[colspan] {
+    width: 350px;
+}
+
+.context_us table th {
+    height: 95px;
+    text-align: center;
+    font-size: 1.1625em;
+    color: #222;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #d9dadb;
+    vertical-align: middle;
+    padding: 0 10px;
+}
+
+.context_us table td {
+    padding: 40px 30px;
+    border-bottom: 1px solid #d9dadb;
+    vertical-align: middle;
+}
+
+.context_us table dl {
+    display: flex;
+}
+
+.context_us table dl dd {
+    font-size: 1em;
+    color: #666;
+    margin-right: 40px;
+}
+
+.context_us table dl .h {
+    color: #8b8b8b;
+    padding-right: 10px;
+}
