@@ -323,6 +323,154 @@ td {
     font-size: 410px;
     line-height: 0;
     font-family: 'NanumGothicExtraBold';
-    margin-left: 1000px;
+    margin-left: 10%;
 }
 
+/* 페이지 레이아웃 반응형 시작 */
+
+@media only screen and (min-width:767px) and (max-width:1920px) {
+    .sec0_bg_txt {
+        top: 16.40625vw;
+        left: -1.92708vw;
+    }
+
+    .sec0_bg_txt p {
+        font-size: 21.35417vw;
+    }
+
+    .page_center {
+        padding: 0 30px;
+    }
+}
+
+@media only screen and (max-width:1160px) {
+    .center_box {
+        margin-top: 0;
+
+    }
+    .center_box > div:nth-child(1) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .center_box > div:nth-child(2) {
+        flex-direction: column;
+    }
+
+    .center_box > div:nth-child(2) .card_1, .center_box > div:nth-child(2) .card_2, .center_box > div:nth-child(2) .card_3 {
+        width: 100%;
+        padding: 5.3258987vw 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .bottom::after {
+        top: 2100rem;
+    }
+}
+
+@media only screen and (max-width:766px) {
+    #history {
+        padding: 0;
+    }
+
+    .sec0_bg_txt {
+        top: 35.046373vw;
+        left: -2.33645vw;
+    }
+
+    .sec0_bg_txt p {
+        font-size: 23.36449vw;
+    }
+
+    .title_box {
+        padding: 33.326489vw 4.1526423vw;
+        padding-bottom: 0;
+        margin-top: 0;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .center_box {
+        padding: 0 4.1526423vw;
+        padding-top: 12.52496879vw;
+    }
+
+    .title_box .left_box {
+        width: 100%;
+    }
+
+    .title_box .left_box p {
+        font-size: 6.123546vw;
+        line-height: 8.887961vw;
+    }
+
+    .title_box .left_box h2 {
+        font-size: 8.4457321vw;
+        line-height: 14.7865432vw;
+        padding: 8.1265413vw 0;
+        text-align: center;
+    }
+
+    .title_box .right_box {
+        width: 100%;
+        text-align: center;
+    }
+
+    .center_box {
+        margin-top: 0;
+        padding-bottom: 0;
+    }
+
+    .center_box > div:nth-child(2) {
+        margin-top: 0;
+    }
+
+    .bottom {
+        justify-content: flex-start;
+        position: relative;
+        padding: 0 4.1526423vw;
+        padding-top: 60rem;
+        flex-direction: column;
+    }
+
+    .bottom::after {
+        top: 0;
+    }
+
+    .bottom .year .yearBox {
+        width: 100%;
+        top: 60rem;
+        left: 4.1526423vw;
+        background: transparent;
+    }
+
+    .bottom .year .yearBox h1 {
+        font-size: 80rem;
+        width: 200rem;
+    }
+
+    .bottom .year::after {
+        width: 0;
+    }
+
+    .month {
+        width: 100%;
+    }
+
+    .month table:first-child {
+        padding-top: 180rem;
+    }
+    .month table {
+        font-size: 16rem;
+        padding-top: -70rem;
+        width: 100%;
+    }
+
+}
