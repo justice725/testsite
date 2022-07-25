@@ -37,8 +37,7 @@ $(function(){
         const center_box_animate_2_1 = $(".center_box_animate_2 .card_1").offset().top; // 하단 center_box 애니메이션
         const center_box_animate_2_2 = $(".center_box_animate_2 .card_2").offset().top; // 하단 center_box 애니메이션
         const center_box_animate_2_3 = $(".center_box_animate_2 .card_3").offset().top; // 하단 center_box 애니메이션
-
-
+        const hisHt = $("#box").height();
 
         if(ht > 0) {
             $(".paralax_title").css({transform:"translateX(-"+ht / 20 + "%)"});
@@ -93,6 +92,12 @@ $(function(){
           $('.card_3').stop().css({opacity:"0",transform:"translateY(30%)"});
         }
         // 하단 center_box columns 애니메이션 끝
+
+        if($("#box").hasClass("on") == true) {
+          $(".month").stop().css("padding-top",hisHt);
+        } else {
+          $(".month").stop().css("padding-top","0");
+        }
     });
 
     
