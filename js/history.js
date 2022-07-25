@@ -1,10 +1,11 @@
-
+// 하단 연혁 스크롤 애니메이션 끝
 const his = document.getElementById('history');
 const hisBt = his.querySelector(".bottom");
 const hisYear = hisBt.querySelector('.year .yearBox');
 const hisYearTxt = hisYear.querySelector('h1');
 const hisMonth = hisBt.querySelectorAll('.month table');
 let hisBtY;
+
 window.addEventListener('scroll', () => {
   historyAction();
 })
@@ -23,53 +24,75 @@ const historyAction = () => {
   }
 }
 historyAction();
+// 하단 연혁 스크롤 애니메이션 끝
 
 $(function(){
     $(window).on('scroll', function(){
-        var WHeight = $('body').height();
-        var ht = $(window).scrollTop();
-        var main = $('.main').height();
-        var PageWrapTop = $('.page_wrap').offset().top;
-        var TitleBoxTop = $('.title_box').offset().top;
-        var CenterBoxTop = $('.center_box').offset().top;
+        const ht = $(window).scrollTop();
+        const wH = $(window).height();
+
+        const left_box = $(".page_center .left_box").offset().top; // 상단 left_box history 소개 부분 애니메이션
+        const right_box = $(".page_center .right_box").offset().top; // 상단 right_box history 소개 부분 애니메이션
+        const center_box_animate_1 = $(".center_box_animate_1").offset().top; // 하단 center_box 애니메이션
+        const center_box_animate_2_1 = $(".center_box_animate_2 .card_1").offset().top; // 하단 center_box 애니메이션
+        const center_box_animate_2_2 = $(".center_box_animate_2 .card_2").offset().top; // 하단 center_box 애니메이션
+        const center_box_animate_2_3 = $(".center_box_animate_2 .card_3").offset().top; // 하단 center_box 애니메이션
+
+
 
         if(ht > 0) {
             $(".paralax_title").css({transform:"translateX(-"+ht / 20 + "%)"});
         }
 
-        if(ht > PageWrapTop - (main / 2)) {
+        // 상단 left_box history 소개 부분 애니메이션
+        if(ht - (left_box-(wH/2)) >= 1 ) {
             $('.title_box .left_box p').stop().css({opacity:"1", transform:"translateY(0)"});
             $(".title_box .left_box h2").delay(300).queue(function(next){
                 $(this).stop().css({opacity:"1",transform:"translateY(0)"});
                 next();
             });
-            $('.title_box .right_box p').stop().css({opacity:"1", transform:"translateY(0)"});
-            
         } else {
           $('.title_box .left_box p').stop().css({opacity:"0", transform:"translateY(100%)"});
           $('.title_box .left_box h2').stop().css({opacity:"0", transform:"translateY(50%)"});
-          $('.title_box .right_box p').stop().css({opacity:"0", transform:"translateY(30%)"});
         };
+        // 상단 left_box history 소개 부분 애니메이션 끝
 
-        if(ht > TitleBoxTop) {
-          $('.center_box div:nth-child(1) p').css({opacity:"1", transform:"translateY(0)"});
-          $('.card_1').delay(300).queue(function(next){
-            $(this).stop().css({opacity:"1",transform:"translateY(0)"});
-            next();
-          });
-          $('.card_2').delay(600).queue(function(next){
-            $(this).stop().css({opacity:"1",transform:"translateY(0)"});
-            next();
-          });
-          $('.card_3').delay(900).queue(function(next){
-            $(this).stop().css({opacity:"1",transform:"translateY(0)"});
-            next();
-          });
+        // 상단 right_box history 소개 부분 애니메이션
+        if(ht - (right_box-(wH/2)) >= 1 ) {
+          $('.title_box .right_box p').stop().css({opacity:"1", transform:"translateY(0)"});
         } else {
-          $('.center_box div:nth-child(1) p').stop().css({opacity:"0", transform:"translateY(100%)"});
-          $('.card_1, .card_2, .card_3').stop().css({opacity:"0", transform:"translateY(30%)"});
-        };
+          $('.title_box .right_box p').stop().css({opacity:"0", transform:"translateY(30%)"});
+        }
+        // 상단 right_box history 소개 부분 애니메이션 끝
 
+        // 하단 center_box 애니메이션
+        if(ht - (center_box_animate_1-(wH/2)) >= 1 ) {
+          $(".center_box_animate_1 p").stop().css({opacity:"1", transform:"translateY(0)"});
+        } else {
+          $(".center_box_animate_1 p").stop().css({opacity:"0", transform:"translateY(100%)"});
+        }
+
+        // 하단 center_box columns 애니메이션
+        if(ht - (center_box_animate_2_1-(wH/2)) >= 1 )  {
+          $('.card_1').stop().css({opacity:"1",transform:"translateY(0)"});
+        } else {
+          $('.card_1').stop().css({opacity:"0",transform:"translateY(30%)"});
+        }
+
+        // 하단 center_box columns 애니메이션
+        if(ht - (center_box_animate_2_2-(wH/2)) >= 1 )  {
+          $('.card_2').stop().css({opacity:"1",transform:"translateY(0)"});
+        } else {
+          $('.card_2').stop().css({opacity:"0",transform:"translateY(30%)"});
+        }
+
+        // 하단 center_box columns 애니메이션
+        if(ht - (center_box_animate_2_3-(wH/2)) >= 1 )  {
+          $('.card_3').stop().css({opacity:"1",transform:"translateY(0)"});
+        } else {
+          $('.card_3').stop().css({opacity:"0",transform:"translateY(30%)"});
+        }
+        // 하단 center_box columns 애니메이션 끝
     });
 
     

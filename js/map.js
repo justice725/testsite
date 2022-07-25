@@ -1,11 +1,11 @@
 $(function(){
     $(window).on('scroll', function(){
-        var WHeight = $('body').height();
-        var ht = $(window).scrollTop();
-        var PageWrapTop = $('.page_wrap').offset().top;
-        var deviceHt = $(window).outerHeight(true);
-        var CUHt = $('.context_us').offset().top;
-        var TBHt = $('.context_us table').offset().top;
+        const WHeight = $('body').height();
+        const ht = $(window).scrollTop();
+        const PageWrapTop = $('.page_wrap').offset().top;
+        const deviceHt = $(window).outerHeight(true);
+        const CUHt = $('.context_us').offset().top;
+        const TBHt = $('.context_us table').offset().top;
         
 
         if(ht > 0) {

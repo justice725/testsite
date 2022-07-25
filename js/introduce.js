@@ -2,7 +2,7 @@
 $(function(){
     
     $(window).on('scroll', function(event, delta){
-        var scrollTriger = 0;
+        const scrollTriger = 0;
             if(delta > 0) { // 스크롤 올릴 때
                 scrollTriger++;
                 console.log(scrollTriger+"scrolltriger On");
@@ -13,34 +13,34 @@ $(function(){
             
             
 
-        var WHeight = $('body').height(); // pc 기준 8230
-        var ht = $(window).scrollTop();
-        var sec1Offset = $('.page_wrap').offset().top; // pc 기준 766
-        var wH = $(window).height();
+        const WHeight = $('body').height(); // pc 기준 8230
+        const ht = $(window).scrollTop();
+        const sec1Offset = $('.page_wrap').offset().top; // pc 기준 766
+        const wH = $(window).height();
 
-        var sec0_2 = $(".section0_2").offset().top; // 두번째 brand mission 애니메이션 높이
-        var animate_1 = $(".animate_1").offset().top; // 첫번째 카드 애니메이션 높이 
-        var animate_2 = $(".animate_2").offset().top; // 두번째 카드 애니메이션 높이 
-        var animate_3 = $(".animate_3").offset().top; // 세번째 카드 애니메이션 높이 
+        const sec0_2 = $(".section0_2").offset().top; // 두번째 brand mission 애니메이션 높이
+        const animate_1 = $(".animate_1").offset().top; // 첫번째 카드 애니메이션 높이 
+        const animate_2 = $(".animate_2").offset().top; // 두번째 카드 애니메이션 높이 
+        const animate_3 = $(".animate_3").offset().top; // 세번째 카드 애니메이션 높이 
 
-        var sec3_animate_1 = $(".sec3_animate_1").offset().top; // section3 첫번째 카드 애니메이션 높이
-        var sec3_animate_2 = $(".sec3_animate_2").offset().top; // section3 두번째 카드 애니메이션 높이
-        var sec3_animate_3 = $(".sec3_animate_3").offset().top; // section3 세번째 카드 애니메이션 높이
-        var sec3_animate_4 = $(".sec3_animate_4").offset().top; // section3 네번째 카드 애니메이션 높이
-        var text_wrap1_1 = $(".animate_1 .text_wrap").offset().top; // 카드 텍스트 애니메이션 모바일 높이
-        var text_wrap1_2 = $(".animate_2 .text_wrap").offset().top; // 카드 텍스트 애니메이션 모바일 높이
-        var text_wrap1_3 = $(".animate_3 .text_wrap").offset().top; // 카드 텍스트 애니메이션 모바일 높이
+        const sec3_animate_1 = $(".sec3_animate_1").offset().top; // section3 첫번째 카드 애니메이션 높이
+        const sec3_animate_2 = $(".sec3_animate_2").offset().top; // section3 두번째 카드 애니메이션 높이
+        const sec3_animate_3 = $(".sec3_animate_3").offset().top; // section3 세번째 카드 애니메이션 높이
+        const sec3_animate_4 = $(".sec3_animate_4").offset().top; // section3 네번째 카드 애니메이션 높이
+        const text_wrap1_1 = $(".animate_1 .text_wrap").offset().top; // 카드 텍스트 애니메이션 모바일 높이
+        const text_wrap1_2 = $(".animate_2 .text_wrap").offset().top; // 카드 텍스트 애니메이션 모바일 높이
+        const text_wrap1_3 = $(".animate_3 .text_wrap").offset().top; // 카드 텍스트 애니메이션 모바일 높이
 
-        var who_we_are = $(".who_we_are").offset().top; // we are cenno top 애니메이션 높이
-        var comment = $(".comment").offset().top; // we are cenno 텍스트 애니메이션 높이
-        var value_1 = $(".value_1").offset().top; // we are cenno 첫번째 카드 애니메이션 높이
-        var value_2 = $(".value_2").offset().top; // we are cenno 두번째 카드 애니메이션 높이
-        var value_3 = $(".value_3").offset().top; // we are cenno 세번째 카드 애니메이션 높이
+        const who_we_are = $(".who_we_are").offset().top; // we are cenno top 애니메이션 높이
+        const comment = $(".comment").offset().top; // we are cenno 텍스트 애니메이션 높이
+        const value_1 = $(".value_1").offset().top; // we are cenno 첫번째 카드 애니메이션 높이
+        const value_2 = $(".value_2").offset().top; // we are cenno 두번째 카드 애니메이션 높이
+        const value_3 = $(".value_3").offset().top; // we are cenno 세번째 카드 애니메이션 높이
 
-        var text_animate_4 = $(".text_animate_4").offset().top; // 하단 첫번째 텍스트 애니메이션 높이
-        var text_animate_4_wrap = $(".text_animate_4_wrap").offset().top
-        var text_animate_5 = $(".text_animate_5").offset().top; // 하단 두번째 텍스트 애니메이션 높이
-        var text_animate_5_wrap = $(".text_animate_5_wrap").offset().top
+        const text_animate_4 = $(".text_animate_4").offset().top; // 하단 첫번째 텍스트 애니메이션 높이
+        const text_animate_4_wrap = $(".text_animate_4_wrap").offset().top
+        const text_animate_5 = $(".text_animate_5").offset().top; // 하단 두번째 텍스트 애니메이션 높이
+        const text_animate_5_wrap = $(".text_animate_5_wrap").offset().top
 
 
         // 첫번째 brandmission 텍스트 좌우스크롤 애니메이션
@@ -219,7 +219,7 @@ $(function(){
 
 
         // 미디어 쿼리 스크립트 시작
-        var maxwidth = matchMedia("screen and (max-width:766px)");
+        const maxwidth = matchMedia("screen and (max-width:766px)");
 
         if(maxwidth.matches) {
             // 첫번째, 두번째, 세번째 카드 애니메이션 시작

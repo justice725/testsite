@@ -1,10 +1,10 @@
 $(function(){
     $(window).on('scroll', function(){
-        var ht = $(window).scrollTop();
-        var deviceHt = $(window).outerHeight(true);
-        var PTF = $('.page_center').offset().top;
-        var Bd = $('.text_box .bold').offset().top;
-        var Com = $('.comment').offset().top;
+        const ht = $(window).scrollTop();
+        const deviceHt = $(window).outerHeight(true);
+        const PTF = $('.page_center').offset().top;
+        const Bd = $('.text_box .bold').offset().top;
+        const Com = $('.comment').offset().top;
 
         if(ht > 0) {
             $(".paralax_title").css({transform:"translateX(-"+ht / 20 + "%)"});

@@ -1,9 +1,9 @@
         $(document).ready(function() {
-            var header = document.querySelector("#hd");
-            var headerHeight = header.offsetHeight;
+            const header = document.querySelector("#hd");
+            const headerHeight = header.offsetHeight;
 
             window.onscroll = function() {
-                var windowTop = window.scrollY;
+                let windowTop = window.scrollY;
 
                 if (windowTop >= headerHeight - 50) {
                     header.classList.add("drop");
@@ -82,7 +82,7 @@
 
         // 메뉴 버튼 애니메이션
         $(function() {
-            var a = "(",
+            const a = "(",
                 b = ")"
             str = true;
 
@@ -128,7 +128,7 @@
         });
 
         $(document).ready(function() {
-            var mql = window.matchMedia("screen and (max-width: 767px)");
+            const mql = window.matchMedia("screen and (max-width: 767px)");
 
             if (mql.matches) {
 
