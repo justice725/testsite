@@ -231,7 +231,7 @@ td {
     display: flex;
     align-items: center;
     top: 120rem;
-    left: calc(50% - 625rem);
+    
 }
 
 .bottom .year .yearBox h1 {
@@ -341,6 +341,7 @@ td {
     .page_center {
         padding: 0 30px;
     }
+
 }
 
 @media only screen and (max-width:1160px) {
