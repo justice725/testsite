@@ -93,11 +93,16 @@ $(function(){
         }
         // 하단 center_box columns 애니메이션 끝
 
-        if($("#box").hasClass("on") == true) {
-          $(".month").stop().css("padding-top",hisHt);
-        } else {
-          $(".month").stop().css("padding-top","0");
+        const maxwidth = matchMedia("screen and (max-width:766px)");
+
+        if(maxwidth.matches) {
+          if($("#box").hasClass("on") == true) {
+            $(".month").stop().css("padding-top",hisHt);
+          } else {
+            $(".month").stop().css("padding-top","0");
+          }
         }
+        
     });
 
     
