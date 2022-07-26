@@ -51,7 +51,6 @@ h1, h2, h3, h4, h5, h6, p, span {
 }
 
 .page_center .page_title_flex h2 {
-    font-size: 48px;
     font-family: 'NanumGothicExtraBold';
     color: #333;
     transition: transform 0.6s, opacity 1s;
@@ -114,5 +113,87 @@ h1, h2, h3, h4, h5, h6, p, span {
     width: 30%;
 }
 
+@media only screen and (min-width:767px) and (max-width:1920px) {
+    .sec0_bg_txt {
+        top: 16.40625vw;
+        left: -1.92708vw;
+    }
+    
+    .sec0_bg_txt p {
+        font-size: 21.35417vw;
+    }
 
+    .page_wrap {
+        padding: 5.2016859vw 4.32654987vw;
+    }
+
+    .page_center .page_title_flex h2 {
+        font-size:7.26254vw;
+    }
+
+    .text_box .bold {
+        font-size: 4.3266987vw;
+    }
+
+    .page_center .text_box .com_box .comment {
+        font-size: 1.5988632vw;
+        line-height: 3.1988632vw;
+    }
+
+    .page_center .text_box .com_box .comment p {
+        margin-bottom: 0;
+        padding-top: 3.775132vw;
+    }
+}
+
+@media only screen and (max-width:766px) {
+    .sec0_bg_txt {
+        top: 35.046373vw;
+        left: -2.33645vw;
+        
+    }
+
+    .sec0_bg_txt p {
+        font-size: 23.36449vw;
+    }
+
+    .page_center .page_title_flex h2 {
+        font-size: 12.853265vw;
+        text-align: center;
+    }
+
+    .page_wrap {
+        padding: 3.50467vw;
+        margin-top: 0;
+    }
+
+    .text_box .bold {
+        padding-top: 10.2659687vw;
+    }
+
+    .text_box .bold p {
+        font-size: 9.34579vw;
+    }
+
+    .com_box {
+        justify-content: center;
+        padding-top: 7.2659897vw;
+    }
+
+    .page_center .text_box .com_box .img_box {
+        width: 0;
+    }
+
+    .page_center .text_box .com_box .comment {
+        width: 100%;
+        font-size: 3.779635vw;
+        line-height: 8.332612vw;
+    }
+
+    .page_center .text_box .com_box .comment p {
+        padding-top: 4.3268914vw;
+        margin-bottom: 0;
+    }
+
+}
 
