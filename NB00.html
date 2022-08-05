@@ -1,0 +1,1661 @@
+<!doctype html>
+<html lang="ko">
+ <head> 
+  <meta charset="utf-8"> 
+  <!-- 삽입 메타소스 --> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+  <title>하늘누에 천잠원 | 바이오온</title> 
+  <meta name="description" content="오령삼일 국내산 누에만 담다 - 하늘누에 천잠원"> 
+  <meta name="keyword" content="100%국내산 누에를 담은, 하늘누에 천잠원"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <!-- 경로 수정 임포트 파일 --> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"> 
+  <script src="./js/jquery-1.8.3.min.js"></script> 
+  <script type="text/javascript" src="./js/wow.min.js"></script> 
+  <link rel="stylesheet" href="./css/default.css"> 
+  <link rel="stylesheet" href="./css/uikit.min.css"> 
+  <script src="./js/uikit.min.js"></script> 
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> 
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+  <script type="text/javascript" src="//wcs.naver.net/wcslog.js"></script> 
+  <!-- 경로 수정 임포트 파일 end--> 
+  <!-- Global site tag (gtag.js) - Google Analytics --> 
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-232128150-3"></script> 
+  <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-232128150-3');
+
+    </script>  -->
+  <!-- Enliple Tracker Start --> 
+  <!-- <script type="text/javascript">
+    (function(a,g,e,n,t){a.enp=a.enp||function(){(a.enp.q=a.enp.q||[]).push(arguments)};n=g.createElement(e);n.async=!0;n.defer=!0;n.src="https://cdn.megadata.co.kr/dist/prod/enp_tracker_self_hosted.min.js";t=g.getElementsByTagName(e)[0];t.parentNode.insertBefore(n,t)})(window,document,"script");
+    enp('create', 'common', 'ad_cenno', { device: 'B' }); // W:웹, M: 모바일, B: 반응형
+    enp('send', 'common', 'ad_cenno');
+    </script>  -->
+  <!-- Enliple Tracker End --> 
+  <!-- Enliple Tracker Start --> 
+  <!-- <script type="text/javascript">
+    (function(a,g,e,n,t){a.enp=a.enp||function(){(a.enp.q=a.enp.q||[]).push(arguments)};n=g.createElement(e);n.defer=!0;n.src="https://cdn.megadata.co.kr/dist/prod/enp_tracker_self_hosted.min.js";t=g.getElementsByTagName(e)[0];t.parentNode.insertBefore(n,t)})(window,document,"script");
+    enp('create', 'conversion', 'ad_cenno', { device: 'B', btnSelector: 'app1_submit', convType: 'etc', productName: '천잠원'});
+    </script>  -->
+  <!-- Enliple Tracker End --> 
+  <!-- 입력폼 스크립트 --> 
+  <script type="text/javascript">
+        new WOW().init();
+
+        //쿠키(Cookie) 저장하기
+        var setCookie = function(name, value, exp) {
+            var date = new Date();
+            date.setTime(date.getTime() + exp * 24 * 60 * 60 * 1000);
+            document.cookie = name + '=' + value + ';expires=' + date.toUTCString() + ';path=/';
+        };
+
+        //쿠키(Cookie) 가져오기
+        var getCookie = function(name) {
+            var value = document.cookie.match('(^|;) ?' + name + '=([^;]*)(;|$)');
+            return value ? value[2] : null;
+        };
+        //쿠키삭제
+        var deleteCookie = function(name) {
+            document.cookie = name + '=; expires=Thu, 01 Jan 1999 00:00:10 GMT;';
+        }
+
+
+
+        /*카운트*/
+        function counterFn() {
+            var cnt0 = 500;
+            var sec4 = 0;
+            var now = new Date();
+            var count = getCookie("count");
+            var before = getCookie("before");
+
+            // 현재시간-쿠키에저장된시간/1000
+            var sec = Math.floor((now - new Date(before)) / 1000);
+
+            if (count > 0) {
+                cnt0 = count;
+            }
+
+            //2분
+            if (sec > 500) {
+                sec4 = Math.floor(sec / 500);
+            }
+
+            if (sec4 > 0) {
+                cnt0 = cnt0 - sec4;
+            }
+
+            if (cnt0 < 0) {
+                $("#num").text("500");
+                cnt0 = 500;
+            } else {
+                $("#num").text(cnt0);
+            }
+
+            id0 = setInterval(count0Fn, 120000);
+
+            function count0Fn() {
+                cnt0--;
+                if (cnt0 < 0) {
+                    clearInterval(id0);
+                    $("#num").text("0");
+                    setCookie("count", 500, 1);
+                    setCookie("before", new Date(), 1);
+                    counterFn();
+                } else {
+                    $("#num").text(cnt0);
+                    setCookie("count", cnt0, 1);
+                    setCookie("before", new Date(), 1);
+                }
+            }
+        };
+        /*카운트*/
+        $(document).ready(function() {
+            counterFn(); //카운트
+        });
+
+        $(document).ready(function() {
+
+            $("#app1_submit").on("click", submit_form);
+
+
+
+        });
+
+
+        function agreeYes() {
+            var st = $("input:radio[name=116]:checked").val();
+            $('input:text[name=116]').val(st);
+            console.log(st);
+        }
+
+        function printName() {
+            const name = document.getElementById('hp_full').value;
+
+            var name1 = name.substr(0, 3);
+            var name2 = name.substr(3, 4);
+            var name3 = name.substr(7, 4);
+
+            $('#hp1').val(name1);
+            $('#hp2').val(name2);
+            $('#hp3').val(name3);
+            console.log(name);
+        }
+
+
+
+
+        function submit_form() {
+            var f = document.inputForm;
+
+            if (f.name.value == '') {
+                alert("이름을 입력해주세요");
+                return false;
+            }
+
+            /*if (f.age.value == '') {
+                alert("나이를 입력해주세요");
+                return false;
+            }*/
+
+            if (f.hp2.value == '') {
+                alert("중간 3자리 또는 4자리를 입력해주세요");
+                return false;
+            }
+            if (f.hp3.value == '') {
+                alert("마지막 4자리를 입력해주세요");
+                return false;
+            }
+            /*
+            if($("#isShared").is(":checked") == false) {
+            	alert("개인정보수집동의에 체크해주세요.");
+            	return false;
+            }
+            */
+            if ($("#isShared2").is(":checked") == false) {
+                alert("제3자 정보제공동의에 체크해주세요.");
+                return false;
+            }
+            if ($("#isShared3").is(":checked") == false) {
+                alert("마케팅 정보수집동의에 체크해주세요.");
+                return false;
+            }
+            insert_data('inputForm', whenSuccUserFunc);
+        }
+
+
+        $(document).ready(function() {
+            $("#commonForm #compCd").val("3000");
+            $("#commonForm #gprodCd").val("BIOC");
+            $("#commonForm #siteCd").val("NB00");
+        });
+
+
+        function whenSuccUserFunc(data) {
+            $(".input_auto").not(":button").val("");
+
+            var _nasa = {};
+            if (window.wcs) _nasa["cnv"] = wcs.cnv("1", "10"); // 전환유형, 전환가치 설정해야함. 설치매뉴얼 참고
+            wcs_do(_nasa);
+
+        }
+
+        $(function() {
+            $("#hp2").keyup(function() {
+                var charLimit = $(this).attr("maxlength");
+                if (this.value.length >= charLimit) {
+                    $(this).next('#hp3').focus();
+                    return false;
+                }
+            });
+        });
+
+    </script> 
+  <!-- 입력폼 스크립트 end --> 
+  <style>
+        @font-face {
+            font-family: 'Eulyoo1945-Regular';
+            src: url('./font/Eulyoo1945-Regular.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'Eulyoo1945-SemiBold';
+            src: url('./font/Eulyoo1945-SemiBold.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'SCDream6';
+            src: url('./font/SCDream6.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'SCDream3';
+            src: url('./font/SCDream3.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+    </style> 
+  <!-- 입력폼 스타일 --> 
+  <style>
+        .mobile,
+        .agree_box_mobile {
+            display: block;
+        }
+
+        .sec1_mo {
+            display: inline-block;
+        }
+
+        .sec1_mo2 {
+            display: none;
+        }
+
+        .sec7_mot,
+        .sec7_mot2,
+        .sec9_mot {
+            display: none;
+        }
+
+        .sec9_pct {
+            display: block;
+        }
+
+        .agree_box_mobile {
+            display: none;
+        }
+
+        .sec2_img_mobile {
+            display: none;
+        }
+
+        .form_btn_box {
+            display: none;
+        }
+
+        .sec5_mot {
+            display: inline-block;
+            color: #333;
+            font-family: 'SCDream3';
+        }
+
+
+        .form_fixed__box {
+            width: 100%;
+            padding: 15px 0px;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            background-color: rgba(61, 61, 61, 1);
+            z-index: 99;
+        }
+
+        .form_fixed__box .form_tit {
+            display: block;
+            text-align: center;
+            color: #fff;
+            font-size: 23px;
+            font-family: 'Eulyoo1945-Regular';
+            letter-spacing: -2px;
+            margin-bottom: 20px;
+            animation: blink-effect 1s step-end infinite;
+        }
+
+        @keyframes blink-effect {
+            50% {
+                color: #c53c3e;
+            }
+        }
+
+
+
+        .form_fixed__box .reserve-frm {
+            width: 100%;
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            position: relative;
+            margin-bottom: 45px;
+            padding: 0 10px;
+            box-sizing: border-box;
+        }
+
+        .form_fixed__box .reserve-frm li {
+            width: 20%;
+        }
+
+
+        .form_fixed__box .input-wrap {
+            display: inline-block;
+        }
+
+        .form_fixed__box .form_label__txt {
+            color: #fff;
+            display: inline-block;
+            font-size: 15px;
+            font-family: 'SCDream6';
+            margin-right: 5px;
+        }
+
+        .form_fixed__box .form_label__txt p {
+            display: inline-block;
+            font-family: 'SCDream3';
+            font-weight: 100;
+            font-size: 13px;
+        }
+
+        .form_fixed__box input.gender[type=radio] {
+            display: none;
+        }
+
+        .form_fixed__box input.gender[type=radio]+label {
+            cursor: pointer;
+            display: inline-block;
+            padding: 5px 0px;
+            width: 82.5px;
+            text-align: center;
+            background-color: #fff;
+            border-color: #ddd;
+        }
+
+        .form_fixed__box input.gender[type=radio]:checked+label {
+            background-image: none;
+            background-color: #fff200;
+        }
+
+        .form_fixed__box input[type=text].bar {
+            padding: 5px 10px;
+            width: 165px;
+        }
+
+        .form_fixed__box input[type=text].bar2 {
+            padding: 10px 10px;
+            width: 100px;
+        }
+
+        .form_fixed__box .sel {
+            padding: 15px 5px;
+            width: 66px;
+        }
+
+        .form_fixed__box .submit_btn {
+            display: block;
+            width: 100%;
+
+        }
+
+        .margin-left6 {
+            margin-left: -6px;
+        }
+
+        @keyframes blink-effect2 {
+            50% {
+                background-color: #fff;
+                color: #991416;
+            }
+        }
+
+        .form_fixed__box .submit_btn input {
+            display: block;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            border: 0;
+            background-color: #991416;
+            font-size: 14px;
+            font-weight: bold;
+            color: #fff;
+            cursor: pointer;
+            letter-spacing: -1px;
+            font-family: 'SCDream3';
+            border-radius: 40px;
+            animation: blink-effect2 1s step-end infinite;
+        }
+
+        .form_fixed__box .agree_box {
+            width: 100%;
+            padding: 10px;
+            background-color: #000;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            color: #fff;
+            font-size: 13px;
+            font-family: 'SCDream3';
+        }
+
+        .form_fixed__box .agree_box ul {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .form_fixed__box .detail {
+            opacity: .5;
+            font-size: 11px;
+        }
+
+        .flex_return {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .flex_1920{
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+
+        }
+        .flex_box_1 {
+            display: flex;
+            width: 40%;
+        }
+
+        .form_fixed__box .reserve-frm li:not(.submit_btn){
+            width: 50%;
+        }
+
+        @media(max-width:1280px ) {
+            .form_fixed__box .reserve-frm li:not(.agree_box_mobile) {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+
+            .agree_box_mobile {
+                display: none;
+            }
+
+            .form_fixed__box .submit_btn input {
+                height: 50%;
+            }
+
+            .form_fixed__box .form_label__txt {
+                margin: 0;
+                padding: 5px 0;
+                width: 100%;
+                text-align: center;
+            }
+
+            .form_fixed__box .form_label__txt p {
+                display: none;
+            }
+        }
+
+        @media(max-width:960px ) {
+            .form_fixed__box .reserve-frm {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .form_fixed__box .reserve-frm li:not(.agree_box_mobile) {
+                flex-direction: row;
+            }
+
+            .flex_box_1 {
+                width: 100%;
+            }
+
+            .form_fixed__box .form_label__txt {
+                width: 30%;
+            }
+
+            .flex_return {
+                width: 70%;
+            }
+
+            .form_fixed__box input.gender[type=radio]+label{
+                width: 50%;
+            }
+
+            .form_fixed__box input[type=text].bar {
+                width: 70%;
+            }
+
+            .margin-left6 {
+                margin:0;
+            }
+
+            .form_fixed__box .reserve-frm li.submit_btn {
+                width: 100%;
+                padding: 10px 0;
+                height: auto;
+            }
+
+            .form_fixed__box .submit_btn input {
+                padding: 10px 0;
+            }
+
+            .form_fixed__box .reserve-frm {
+                margin-bottom: 35px;
+            }
+        }
+
+        @media(max-width:660px ) {
+            .flex_box_1 {
+                flex-direction: column;
+            }
+
+            .form_fixed__box .reserve-frm li:not(.submit_btn) {
+                width: 100%;
+            }
+        }
+
+        @media(max-width:540px ) {
+            .form_fixed__box .reserve-frm {
+                margin-bottom: 0;
+            }
+
+            .form_fixed__box .agree_box {
+                position: inherit;
+                background-color: transparent;
+            }
+
+            .agree_all .agree {
+                font-size: 12px;
+            }
+        }
+
+    </style> 
+
+  
+  <style>
+        .show_760 {
+            display: none;
+        }
+
+        .footer {
+            font-family: 'SCDream3';
+            width: 100%;
+            position: relative;
+            background-color: #1e1e1e;
+            padding-bottom: 100px;
+        }
+
+        .footer_inner {
+            display: flex;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 50px 30px;
+            color: #fff;
+            text-align: center;
+        }
+
+        .footer_tel_box {
+            padding: 20px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .footer_logo_box {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            padding-bottom: 40px;
+        }
+
+        .footer_text_box {
+            font-size: 14px;
+            opacity: .7;
+            color: #fff;
+            line-height: 2;
+        }
+
+        @media (max-width:1300px) {
+            .footer_inner {
+                box-sizing: border-box;
+                padding: 50px 20px;
+            }
+        }
+
+        @media (max-width:760px) {
+            .footer_text_box {
+                width: 70%;
+            }
+
+            .footer_text_box p {
+                word-break: break-all;
+                text-align: left;
+            }
+
+            .show_760 {
+                display: block;
+            }
+        }
+
+        @media (max-width:660px) {
+            .footer_tel_box img {
+                width: 80%;
+            }
+
+            .footer_text_box {
+                width: 90%;
+            }
+        }
+
+    </style> 
+  <style>
+        .goupbtn {
+            bottom: 60px;
+            right: 25px;
+            width: 70px;
+            height: 70px;
+            background-color: #ccc;
+            border: 0;
+            position: fixed;
+            z-index: 99999;
+            cursor: pointer;
+            opacity: .4;
+            font-family: 'SCDream6';
+            color: #333;
+            display: none;
+        }
+
+        .goupbtn2 {
+            display: none !important;
+        }
+
+    </style> 
+  <script>
+        function clickme() {
+            window.scrollTo({
+                top: 0,
+                left: 0,
+                behavior: 'smooth'
+            });
+        }
+
+
+        $(document).ready(function() {
+            $('.goupbtn2').removeAttr("href");
+            $('.goupbtn2').css("cursor", "pointer");
+
+
+
+
+
+
+            var windowWidth = window.matchMedia("screen and (max-width: 1420px)");
+
+            if (windowWidth.matches) {
+                $("input:checkbox.ft_ck").change(function() {
+
+                    if ($("input:checkbox.ft_ck").prop("checked")) {
+
+                        $(".form_fixed__box").stop().not().animate({
+                            "bottom": "0px"
+                        }, 500);
+
+                    } else {
+
+                        $(".form_fixed__box").stop().not().animate({
+                            "bottom": "-355px"
+                        }, 500);
+
+                    }
+                });
+                
+
+                $('.goupbtn2').click(function() {
+                    $('input:checkbox.ft_ck').prop('checked', function() {
+                        return !$(this).prop('checked');
+                    });
+                });
+
+                /* $("section").click(function() {
+                    $('input:checkbox.ft_ck').prop('checked', false);
+                    if ($("input:checkbox.ft_ck").prop("checked")) {
+
+                        $(".form_fixed__box").stop().not().animate({
+                            "bottom": "0px"
+                        }, 500);
+
+                    } else {
+
+                        $(".form_fixed__box").stop().not().animate({
+                            "bottom": "-355px"
+                        }, 500);
+
+                    }
+                }); */
+            }
+        });
+
+        window.addEventListener('scroll', function() {
+            console.log(window.scrollY);
+
+            if (window.scrollY < 5) {
+                $(".goupbtn").css("display", "none");
+            } else {
+                $(".goupbtn").css("display", "block");
+            }
+        });
+
+    </script> 
+
+ </head> 
+ <body> 
+  <script>
+        // 쿠키 가져오기
+        var getCookie = function(cname) {
+            var name = cname + "=";
+            var ca = document.cookie.split(';');
+            for (var i = 0; i < ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0) == ' ') c = c.substring(1);
+                if (c.indexOf(name) != -1) return c.substring(name.length, c.length);
+            }
+            return "";
+        }
+
+        // 24시간 기준 쿠키 설정하기  
+        var setCookie = function(cname, cvalue, exdays) {
+            var todayDate = new Date();
+            todayDate.setTime(todayDate.getTime() + (exdays * 24 * 60 * 60 * 1000));
+            var expires = "expires=" + todayDate.toUTCString();
+            document.cookie = cname + "=" + cvalue + "; " + expires;
+        }
+
+        var couponClose = function() {
+            if ($("input[name='chkbox']").is(":checked") == true) {
+                setCookie("close", "Y", 1); //기간( ex. 1은 하루, 7은 일주일)
+            }
+            $("#pop").hide();
+        }
+
+        $(document).ready(function() {
+            var cookiedata = document.cookie;
+            console.log(cookiedata);
+            if (cookiedata.indexOf("close=Y") < 0) {
+                $("#pop").show();
+            } else {
+                $("#pop").hide();
+            }
+            $("#close").click(function() {
+                couponClose();
+            });
+        });
+
+    </script> 
+    <style>
+        .section1 {
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .section1 .section1_inner {
+            width: 100%;
+            max-width: 1000px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .section1 .section1_inner .section1_img_box {
+            width: 100%;
+        }
+
+        .section1 .section1_inner .section1_img_box img {
+            width: 100%;
+        }
+    </style>
+    <style>
+        .db_form {
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .db_form_inner {
+            width: 100%;
+            max-width: 1000px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-sizing: border-box;
+            padding: 100px 20px;
+        }
+
+        .inputForm2 {
+            width: 100%;
+            font-size: 18px;
+        }
+
+        .inputForm2 fieldset {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .form_title_box {
+            width: 100%;
+            padding-bottom: 50px;
+        }
+
+        .form_title_box img {
+            width: 100%;
+        }
+
+        .inputForm2 .reserve-frm {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+        }
+
+        .inputForm2 .reserve-frm li {
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        .inputForm2 .reserve-frm li .form_label__txt {
+            width: 30%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .inputForm2 .reserve-frm li .reserve_frm_flex_box {
+            width: 70%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        .inputForm2 .reserve-frm li .reserve_frm_flex_box label {
+            margin-right: 5px;
+        }
+
+        .inputForm2 .reserve-frm li .reserve_frm_flex_box #men1 {
+            margin-right: 30px;
+        }
+
+        .inputForm2 .reserve-frm li .reserve_frm_flex_box input[type="radio"] {
+            appearance: none;
+            display: block;
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+            background-image: url(./img/radio_nonchecked.png);
+            background-repeat: no-repeat;
+            background-position: center center;
+            transition: all 0.3s;
+        }
+
+        .inputForm2 .reserve-frm li .reserve_frm_flex_box input[type="radio"]:checked {
+            background-image: url(./img/radio_checked.png);
+            background-repeat: no-repeat;
+            background-position: center center;
+            transition: all 0.3s;
+        } 
+
+        .inputForm2 .reserve-frm li input[type="text"] {
+            width: 70%;
+            font-size: 18px;
+            padding: 5px 0;
+            text-indent: 5px;
+        }
+
+        .inputForm2 .input-wrap {
+            position: absolute;
+            left: -9999999999999999px;
+            z-index: -9999;
+        }
+
+        .inputForm2 .agree_box {
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 15px 0;
+        }
+
+        .inputForm2 .agree_box .privacy  {
+            width: 30%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        .agree_all input[type="checkbox"] {
+            appearance: none;
+            width: 16px;
+            height: 16px;
+            background-image: url(./img/checkbox_nonchecked.png);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            transition: all 0.3s;
+        }
+
+        .agree_all input[type="checkbox"]:checked {
+            background-image: url(./img/checkbox_checked.png);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+        }
+
+        .agree_all .agree {
+            padding: 3px 0;
+        }
+
+        .inputForm2 .submit_btn {
+            width: 100%;
+        }
+
+        .inputForm2 .submit_btn #app2_submit {
+            width: 100%;
+            appearance: none;
+            border: none;
+            background-color: #333;
+            color: #fff;
+            cursor: pointer;
+            box-sizing: border-box;
+            padding: 10px 0;
+            font-size: 20px;
+            font-weight: 900;
+        }
+
+        @media(max-width:500px) {
+            .inputForm2 .agree_box .privacy {
+                font-size: 16px;
+                text-align: center;
+            }
+        }
+    </style>
+
+    <script>
+        $(function(){
+            $(window).on('scroll', function(){
+                const ht = $(window).scrollTop();
+                const wH = $(window).height();
+
+                const db_form = $(".db_form").offset().top;
+
+                if(ht - (db_form-(wH)) >= 1 ) {
+                    $(".form_fixed__box").stop().css({"z-index":"-99", opacity:"0", visiblity:"hidden"});
+                } else {
+                    $(".form_fixed__box").stop().css({"z-index":"99", opacity:"1", visiblity:"visible"});
+                }
+            });
+        });
+    </script>
+  <!-- 랜딩 본문 --> 
+  <section class="section1" id="section">
+    <article class="section1_inner">
+        <figure class="section1_img_box">
+            <img src="./img/section_1.png" alt="#">
+        </figure>
+    </article>
+  </section>
+  <!-- 푸터 --> 
+  <section class="footer"> 
+   <div class="footer_inner"> 
+    <article class="footer_tel_box"> 
+     <a href="tel:1833-8890"><img src="./img/footer_title_1.png" alt=""> </a> 
+    </article> 
+    <article class="footer_logo_box"> 
+     <img src="./img/footer_logo.png" alt=""> 
+    </article> 
+    <article class="footer_text_box"> 
+     <p> 대표 : 고성욱 |<br class="show_760"> 사업장소재지 : 대전광역시 서구 둔산대로 117번길 95, <br class="show_760"> 리더스타운 B동 7층 </p> 
+     <p> 사업자등록증 : 708-86-02580 |<br class="show_760"> 전화권유판매업신고 : 제2022-대전서구-0008호 </p> 
+     <p> 건강기능식품판매업 : 제2022-0312776호 |<br class="show_760"> 개인정보담당자 : 김덕률 </p> 
+    </article> 
+   </div> 
+  </section> 
+  <!-- // 푸터 --> 
+  <section class="db_form"> 
+    <div class="db_form_inner"> 
+     <form name="inputForm2" id="inputForm2" method="post" style="margin:0px;" class="inputForm2"> 
+      <fieldset> 
+       <div class="form_title_box"> 
+        <img src="./img/form2_title_1.png" alt="#"> 
+       </div> 
+       <ul class="reserve-frm"> 
+        <li style="margin-top:0"> <span class="form_label__txt">성&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;별<!-- <p>&nbsp;&nbsp;&nbsp;[필&nbsp;&nbsp;수]</p> --></span> 
+         <div class="reserve_frm_flex_box"> 
+          <label for="men1">남성</label>
+          <input type="radio" id="men1" class="gender" name="116" value="남성" checked onclick="agreeYes()"> 
+          <label for="girl1" class="margin-left6">여성</label>
+          <input type="radio" id="girl1" class="gender" name="116" value="여성" onclick="agreeYes()"> 
+          <br>
+          <br> 
+          <input type="text" name="116" id="116" placeholder="성별" class="bar input_auto" value="남성" style="position: fixed; left: -9999px"> 
+         </div> </li> 
+        <br class="hide_630"> 
+        <li style="margin-top:0"> <span class="form_label__txt">이&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;름<!-- <p>&nbsp;&nbsp;&nbsp;[필&nbsp;&nbsp;수]</p> --></span> <input type="text" name="name" id="name" placeholder="이름을 입력하세요" class="bar input_auto" required> </li>
+        <br class="hide_630"> 
+        <li class="mo_flex"> <span class="form_label__txt">연 락 처<!-- <p>&nbsp;&nbsp;&nbsp;[필&nbsp;&nbsp;수]</p> --></span> 
+         <input type="text" name="hp_full" id="hp_full" placeholder="연락처를 입력하세요" class="bar input_auto" required maxlength="11" onkeyup="printName()">
+         <div class="input-wrap"> 
+          <select id="hp1" name="hp1" class="sel input_auto" required> <option value="010">010</option> <option value="011">011</option> <option value="016">016</option> <option value="017">017</option> </select> 
+          <input type="text" name="hp2" id="hp2" placeholder="중간 4자리" class="bar2 input_auto" required> 
+          <input type="text" name="hp3" id="hp3" placeholder="마지막 4자리" class="bar2 input_auto" required> 
+         </div> </li> 
+        <br class="hide_630"> 
+        <li> <span class="form_label__txt">나&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;이<!-- <p>&nbsp;&nbsp;&nbsp;[선&nbsp;&nbsp;택]</p> --></span> <input type="text" name="115" id="115" placeholder="나이를 입력하세요" class="bar input_auto"> </li> 
+       </ul> 
+       <div class="agree_box"> 
+        <span class="privacy">개인정보보호정책</span> 
+        <ul class="agree_all"> 
+         <li class="agree"> <input type="checkbox" name="isShared" id="isShared" checked value="1"> <label for="isShared">개인정보 수집동의</label> <a href="#agreement_text" data-uk-modal class="detail">[자세히보기]</a> </li> 
+         <li class="agree"> <input type="checkbox" name="isShared" id="isShared2" checked value="1"> <label for="isShared2">제3자 정보제공동의</label> <a href="#useinfo_text" data-uk-modal class="detail">[자세히보기]</a> </li> 
+         <li class="agree"> <input type="checkbox" name="isShared" id="isShared3" checked value="1"> <label for="isShared3">마케팅 정보수집동의</label> <a href="#marketing_text" data-uk-modal class="detail">[자세히보기]</a> </li> 
+        </ul> 
+       </div> 
+       <div class="submit_btn"> 
+        <input type="button" id="app2_submit" value="혜택 알아보러가기" class="btn-apply" onclick="submit_form2()"> 
+       </div> 
+      </fieldset> 
+     </form> 
+    </div> 
+   </section> 
+  <div class="form_fixed__box"> 
+   <!--<input class="goupbtn2" type="button" value=""> --> 
+   <div class="form_btn_box"> 
+    <a href="tel:1833-8890" class="call"><i class="fa-solid fa-headset"></i>전화걸기</a> 
+    <a href="" class="goupbtn2"><input type="checkbox" class="ft_ck" id="ft_ck" style="position: fixed; top: 999999999px; z-index: 999999999"><label for="ft_ck" style="display: block;width: 100%; height: 100%;"><i class="fa-solid fa-comment-dots"></i>상담신청</label></a> 
+   </div> 
+   <form name="inputForm" id="inputForm" method="post" style="margin:0px;"> 
+    <fieldset> 
+     <legend class="hid form_tit" style="display: none;">무료상담 신청해 보세요</legend> 
+     <ul class="reserve-frm"> 
+        <div class="flex_box_1">
+      <li style="margin-top:0" class="flex_1920"> <span class="form_label__txt">성&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;별<p>&nbsp;&nbsp;&nbsp;</p></span> 
+        <div class="flex_return">
+            <input type="radio" id="men" class="gender" name="116" value="남성" checked onclick="agreeYes()"><label for="men">남성</label> <input type="radio" id="girl" class="gender" name="116" value="여성" onclick="agreeYes()"><label for="girl" class="margin-left6">여성</label> <br class="mobile"> <input type="text" name="116" id="116" placeholder="성별" class="bar input_auto" value="남성" style="position: fixed; left: -9999px"> 
+        </div>
+    </li> 
+      <br> 
+      <li style="margin-top:0"> <span class="form_label__txt">이&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;름<p>&nbsp;&nbsp;&nbsp;</p></span> 
+        <input type="text" name="name" id="name" placeholder="이름을 입력하세요" class="bar input_auto" required> 
+    </li> 
+    </div>
+    <div  class="flex_box_1">
+      <br> 
+      <li> <span class="form_label__txt">연 락 처<p>&nbsp;&nbsp;&nbsp;</p></span> <input type="text" name="hp_full" id="hp_full" placeholder="연락처를기입해주세요" class="bar input_auto" required maxlength="11" onkeyup="printName()"> </li> 
+      <br> 
+      <li> <span class="form_label__txt">나&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;이<p>&nbsp;&nbsp;&nbsp;</p></span> <input type="text" name="115" id="115" placeholder="나이를 입력하세요" class="bar input_auto"> </li> 
+      <li class="agree_box_mobile"> <span class="form_label__txt">개인정보처리방침</span> 
+      </div>
+       <div class="agree_box agree_box_mobile"> 
+        <ul class="agree_all"> 
+         <li class="agree"> <input type="checkbox" name="isShared" id="isShared" checked value="1"> <label for="isShared">개인정보 수집동의</label> <a href="#agreement_text" data-uk-modal class="detail">[보기]</a> </li> 
+         <li class="agree"> <input type="checkbox" name="isShared" id="isShared2" checked value="1"> <label for="isShared2">제3자 정보제공동의</label> <a href="#useinfo_text" data-uk-modal class="detail">[보기]</a> </li> 
+         <li class="agree"> <input type="checkbox" name="isShared" id="isShared3" checked value="1"> <label for="isShared3">마케팅 정보수집동의</label> <a href="#marketing_text" data-uk-modal class="detail">[보기]</a> </li> 
+        </ul> 
+       </div> </li> 
+      <li class="submit_btn"> <input type="button" id="app1_submit" value="선착순100명 3+1 혜택받기" class="btn-apply"> </li> 
+      <div class="input-wrap"> 
+       <select id="hp1" name="hp1" class="sel input_auto" required style="position: fixed; left: 9999px;"> <option value="010">010</option> <option value="011">011</option> <option value="016">016</option> <option value="017">017</option> </select> 
+       <input type="text" name="hp2" id="hp2" placeholder="중간 4자리" class="bar2 input_auto" required maxlength="4" style="position: fixed; left: 9999px;"> 
+       <input type="text" name="hp3" id="hp3" placeholder="마지막 4자리" class="bar2 input_auto" required maxlength="4" style="position: fixed; left: 9999px;"> 
+      </div> 
+     </ul> 
+     <div class="agree_box agree_box_pc"> 
+      <ul class="agree_all"> 
+       <li class="agree"> <input type="checkbox" name="isShared" id="isShared" checked value="1"> <label for="isShared">개인정보 수집동의</label> <a href="#agreement_text" data-uk-modal class="detail">[보기]</a> </li> 
+       <li class="agree"> <input type="checkbox" name="isShared" id="isShared2" checked value="1"> <label for="isShared2">제3자 정보제공동의</label> <a href="#useinfo_text" data-uk-modal class="detail">[보기]</a> </li> 
+       <li class="agree"> <input type="checkbox" name="isShared" id="isShared3" checked value="1"> <label for="isShared3">마케팅 정보수집동의</label> <a href="#marketing_text" data-uk-modal class="detail">[보기]</a> </li> 
+      </ul> 
+     </div> 
+    </fieldset> 
+   </form> 
+  </div> 
+  <input class="goupbtn" type="button" value="TOP" onclick="clickme()"> 
+  <script>
+        AOS.init();
+
+    </script> 
+  <!-- 랜딩 본문 end --> 
+  <!-- 개인정보 수집동의 시작 --> 
+  <div id="agreement_text" class="uk-modal"> 
+   <div class="uk-modal-dialog"> 
+    <button type="button" class="uk-modal-close btn btn-black" style="float:right;background-color:#000; color:#fff;padding:5px 10px;border:0;  cursor:pointer;">닫기</button> 
+    <br> 
+    <br> 개인정보 수집 및 이용 동의 
+    <br> 
+    <br> (주)바이오온 (이하 “바이오온”)은 고객의 개인정보를 중요시하며, 『정보통신망이용 촉진 및 정보보호 등에 관한 법률 』 을 준수하고 있습니다. 
+    <br> 바이오온은 개인정보취급방침을 통해 아래와 같이 제공해주시는 개인정보의 수집 및 이용목적과 개인정보보호를 위한 조치 사항을 고지합니다. 
+    <br> 회사는 개인정보취급방침을 개정하는 경우 웹사이트 공지사항(또는 개별공지)을 통하여 공지할 것입니다. 
+    <br> 
+    <br> 1. 수집하는 개인정보 항목 
+    <br> 2. 개인정보의 수집 및 이용목적 
+    <br> 3. 개인정보의 보유 및 이용기간 
+    <br> 4. 개인정보의 파기절차 및 방법 
+    <br> 5. 개인정보 제공 
+    <br> 6. 수집한 개인정보의 위탁 
+    <br> 7. 이용자 및 법정대리인의 권리와 그 행사방법 
+    <br> 8. 개인정보 자동 수집 장치의 설치, 운영 및 그 거부에 관한 사항 
+    <br> 9. 개인정보에 관한 민원서비스 
+    <br> 
+    <br> 1. 개인정보 수집 이용 제공 등에 대한 동의 
+    <br> 바이오온이 제공하는 안내 및 상담신청에 이용자가 제공한 정보는 개인정보취급방침에 명시된 내용 이외의 목적으로는 사용되지 아니합니다. 
+    <br> 
+    <br> 2. 수집하는 개인정보의 범위 및 수집방법 
+    <br> 바이오온은 이용자의 상담신청 및 서비스신청 등을 위한 필수적인 정보를 입력 받고 있습니다. 
+    <br> - 필수정보 : 성명, 연락처, 성별 
+    <br> - 선택정보 : 나이 등 
+    <br> - 서비스 이용과정이나 처리 과정에서 자동으로 생성되어 수집될 수 있는 정보 : IP Address, 참여일시, 유입경로(참여매체) 
+    <br> 
+    <br> 3. 개인정보의 수집 및 이용목적 
+    <br> 입력하신 정보는 개인별 맞춤 서비스 제공, 이벤트 안내(이메일, 전화, MMS 등), 상품안내를 위한 마케팅 자료(전화, 이메일, MMS 등)로 활용 됩니다. 
+    <br> 
+    <br> 4. 개인정보의 보유 및 이용기간 
+    <br>개인정보를 수집 동의일로부터 5년간 보유 및 활용하게 되고, 위 보유기간의 경과 즉시 기록을 재생할 수 없는 기술적 방법을 사용하여 동 개인정보를 파기합니다. 단, 다음의 정보에 대해서는 아래의 이유로 명시한 기간 동안 보존합니다. &lt; 관련법령에 의한 정보 보유 사유 &gt; 
+    <br> - 계약 또는 청약철회 등에 관한 기록 : 5년 
+    <br> - 대금결제 및 재화 등의 공급에 관한 기록 : 5년 
+    <br> - 소비자의 불만 또는 분쟁 처리에 관한 기록 : 3년 
+    <br> 
+    <br> 5. 개인정보의 파기절차 및 방법 
+    <br> 원칙적으로, 개인정보 수집 및 이용목적이 달성되거나, 개인정보 보유 및 이용기간이 종료한 경우 해당 정보를 지체 없이 파기합니다. 파기절차 및 방법은 다음과 같습니다. 
+    <br> &lt; 파기절차 &gt; 
+    <br> 이용자가 참여한 고객정보는 목적이 달성된 후 내부 방침 및 기타 관련 법령에 의한 정보보호 사유에 따라(보유 및 이용기간 참조) 일정기간 저장된 후 파기됩니다. 동 개인정보는 법률에 의한 경우가 아니고서는 보유 이외의 다른 목적으로 이용되지 않습니다. 
+    <br> &lt; 파기방법 &gt; 
+    <br> 종이에 출력된 개인정보는 분쇄기로 분쇄하거나 소각을 통하여 파기하고, 전자적 파일형태로 저장된 개인정보는 기록을 재생할 수 없는 기술적 방법을 사용하여 삭제합니다. 
+    <br> 
+    <br> 6. 개인정보의 안전성 확보 조치 
+    <br> 바이오온은 개인정보의 안전성 확보를 위해 다음과 같은 조치를 취하고 있습니다. 
+    <br> 
+    <br> 1. 관리적 조치 : 내부관리계획 수립·시행 
+    <br> 
+    <br> 2. 기술적 조치 : 개인정보파일에 대한 접근권한 관리, 보안프로그램 설치 
+    <br> 
+    <br> 3. 물리적 조치 : USB, HDD 등의 보조 기억매체를 금고 또는 잠금 장치가 있는 캐비닛에 보관하여 비인가자의 접근을 제한함 
+    <br> 개인정보 접근권한은 임직원 직무별로 최소한의 인원에게 차등화하여 부여하고 있으며, 개인정보 보호 관련 수시 교육을 진행하고 있습니다. 
+    <br> 
+    <br>7. 개인정보 수집 이용 제공 등에 대한 동의 철회 
+    <br>이용자께서는 개인정보의 수집 이용 제공에 대한 동의를 본인 및 법정대리인을 통해 철회할 수 있습니다. 동의철회는 명시된 문의전화 또는 이메일 등을 통해 가능합니다. 
+    <br> 
+    <br> 8. 개인정보 자동 수집 장치의 설치∙운영 및 그 거부에 관한 사항 
+    <br> 바이오온은 쿠키를 사용하지 않습니다. 
+    <br> 
+    <br> 9. 개인정보의 제3자 제공 
+    <br> 바이오온은 이용자의 개인정보를 &lt; 개인정보의 수집목적 및 이용목적 &gt;에서 고지한 범위 내에서 사용하며, 동 범위를 초과하여 이용하거나 타인 또는 타기업, 기관에 제공하지 않습니다. 그러나 보다 나은 서비스 제공을 위하여 필요할 경우, 이용자의 개인정보를 제휴사에게 제공하거나 또는 제휴사와 공유할 수 있습니다. 개인정보를 제공하거나 공유할 경우에는 사전에 이용자의 동의를 구하는 절차를 거치게 됩니다. 
+    <br> 
+    <br> 10. 개인정보 처리 위탁 
+    <br> 수탁자 위탁사무 및 목적 보유 및 이용기간 
+    <br> ㈜이노페이 및 토스에이먼츠 본인인증(금융거래, 금융서비스), 결제대행 고객동의 철회 또는 위탁 계약 만료 때 까지 
+    <br> ㈜다인 시스템 유지 보수 및 관리 고객동의 철회 또는 위탁 계약 만료 때 까지 
+    <br> 000 주문 상품의 배송 고객동의 철회 또는 위탁 계약 만료 때 까지 
+    <br> ㈜첸노 광고에 반응한 상담신청자 개인정보를 서버에 수집, 보관, 처리, 전달, 파기하는 업무 고객동의 철회 또는 위탁 계약 만료 때 까지 
+    <br> 
+    <br> 11. 개인정보관리책임자 및 민원서비스 
+    <br> 이용자의 개인정보를 보호하고 관련한 불만을 처리하기 위하여 바이오온은 개인정보관리책임자를 두어 개인정보를 관리하고 있습니다. 
+    <br> [개인정보관리책임자] 
+    <br> - 성 명 : 김덕률 
+    <br> - 직 책 : 이사 
+    <br> - 이메일 : drkim@cenno.co.kr 
+    <br> - 연락처 : 042-489-7994 
+    <br> - FAX : 042-489-7995 
+    <br> [개인정보 보호 담당부서] 
+    <br> - 성 명 : 김덕률 
+    <br> - 직 책 : 이사 
+    <br> - 이메일 : drkim@cenno.co.kr 
+    <br> - 연락처 : 042-489-7994 
+    <br> - FAX : 042-489-7995 
+    <br> 
+    <br> 이용자께서는 바이오온의 서비스(또는 사업)을 이용하시면서 발생한 모든 개인정보 보호 관련 문의, 불만처리, 피해구제 등에 관한 사항을 개인정보 관리책임자 및 담당부서로 문의하실 수 있습니다. 바이오온은 정보주체 또는 법정 대리인의 문의에 대해 지체없이 조치하겠습니다. 
+    <br> 
+    <br> 12. 정보주체 및 법정대리인의 권리와 그 행사방법 
+    <br> ① 정보주체는 바이오온에 대해 언제든지 개인정보 열람·정정·삭제·처리정지 요구 등의 권리를 행사할 수 있습니다. 
+    <br> ② 제1항에 따른 권리 행사는 바이오온에 대해 개인정보보호법 시행령 제41조제1항에 따라 서면, 전자우편, 모사전송(FAX) 등을 통하여 하실 수 있으며, 바이오온은 이에 대해 지체없이 조치하겠습니다. 
+    <br> ③ 제1항에 따른 권리 행사는 정보주체의 법정대리인이나 위임을 받은 자 등 대리인을 통하여 하실 수 있습니다. 이 경우 개인정보 보호법 시행규칙 별지 제11호 서식에 따른 위임장을 제출하셔야 합니다. 
+    <br> ④ 개인정보 열람 및 처리정지 요구는 개인정보보호법 제35조 제5항, 제37조 제2항에 의하여 정보주체의 권리가 제한 될 수 있습니다. 
+    <br> ⑤ 개인정보의 정정 및 삭제 요구는 다른 법령에서 그 개인정보가 수집 대상으로 명시되어 있는 경우에는 그 삭제를 요구할 수 없습니다. 
+    <br> ⑥ 바이오온은 정보주체 권리에 따른 열람의 요구, 정정·삭제의 요구, 처리정지의 요구 시 열람 등 요구를 한 자가 본인이거나 정당한 대리인인지를 확인합니다. 
+    <br> 
+    <br> 13. 개인정보 열람청구 
+    <br> 이용자는 개인정보 보호법 제35조에 따른 개인정보의 열람 청구를 아래의 부서에 할 수 있습니다. 바이오온은 이용자의 개인정보 열람청구가 신속하게 처리되도록 노력하겠습니다. 
+    <br> [개인정보관리자] 
+    <br> - 성 명 : 김덕률 
+    <br> - 직 책 : 이사 
+    <br> - 이메일 : drkim@cenno.co.kr 
+    <br> - 연락처 : 042-489-7994 
+    <br> - FAX : 042-489-7995 
+    <br> 
+    <br> 14. 만 14 세 미만 아동의 개인정보보호 
+    <br> 바이오온은 법정 대리인의 동의가 필요한 만 14세 미만 아동의 회원 가입은 받고 있지 않습니다. 
+    <br> 15. 권익침해 구제방법 
+    <br> 이용자는 아래의 기관에 대해 개인정보 침해에 대한 피해구제, 상담 등을 문의하실 수 있습니다. 
+    <br> [아래의 기관은 바이오온과는 별개의 기관으로서, 바이오온의 자체적인 개인정보 불만처리, 피해구제 결과에 만족하지 못하시거나 보다 자세한 도움이 필요하시면 문의하여 주시기 바랍니다] 
+    <br> 가. 개인정보보호 종합지원 포털 (행정안전부 운영) 
+    <br> - 소관업무 : 개인정보 침해사실 신고, 상담 신청, 자료제공 
+    <br> - 홈페이지 : www.privacy.go.kr 
+    <br> - 전화 : 02-2100-3394 
+    <br> 나. 개인정보 침해신고센터 (한국인터넷진흥원 운영) 
+    <br> - 소관업무 : 개인정보 침해사실 신고, 상담 신청 
+    <br> - 홈페이지 : privacy.kisa.or.kr 
+    <br> - 전화 : (국번없이) 118 
+    <br> 다. 개인정보 분쟁조정위원회 (한국인터넷진흥원 운영) 
+    <br> 
+    <br> - 소관업무 : 개인정보 분쟁조정신청, 집단분쟁조정 (민사적 해결) 
+    <br> - 홈페이지 : privacy.kisa.or.kr 
+    <br> - 전화 : (국번없이) 118 
+    <br> 라. 경찰청 사이버테러대응센터 
+    <br> - 소관업무 : 개인정보 침해 관련 형사사건 문의 및 신고 
+    <br> - 홈페이지 : www.netan.go.kr 
+    <br> - 전화 : (사이버범죄) 02-393-9112 (경찰청 대표) 1566-0112 
+    <br> 
+    <br> 
+    <table style="border: 1px solid #000;"> 
+     <tbody> 
+      <tr> 
+       <th>수탁자</th> 
+       <th>위탁사무 및 목적</th> 
+       <th>보유 및 이용기간</th> 
+      </tr> 
+      <tr> 
+       <td>주식회사 바이오온</td> 
+       <td>회원 정보 DB시스템 운영/관리 업무고객 통화, 이메일, 문자메시지 발송제품의 상담 및 판매, 배송 등의 전반고객상담 및 불만처리 업무 전반</td> 
+       <td>고객동의 철회 또는 위탁 계약 만료 때 까지</td> 
+      </tr> 
+      <tr> 
+       <td>이노페이 및 토스페이먼츠</td> 
+       <td>본인인증(금융거래, 금융서비스)결제대행</td> 
+       <td>고객동의 철회 또는 위탁 계약 만료 때 까지</td> 
+      </tr> 
+      <tr> 
+       <td>택배사</td> 
+       <td>주문 상품의 배송</td> 
+       <td>고객동의 철회 또는 위탁 계약 만료 때 까지</td> 
+      </tr> 
+      <tr> 
+       <td>㈜첸노</td> 
+       <td>광고에 반응한 상담신청자 개인정보를 서버에 수집, 보관, 처리, 전달, 파기하는 업무</td> 
+       <td>고객동의 철회 또는 위탁 계약 만료 때 까지</td> 
+      </tr> 
+      <tr> 
+       <td>㈜다인</td> 
+       <td>시스템 유지 보수 및 관리</td> 
+       <td>고객동의 철회 또는 위탁 계약 만료 때 까지</td> 
+      </tr> 
+     </tbody> 
+    </table> 
+    <br> 16. 정책 변경에 따른 공지의무 
+    <br> 현 개인정보처리방침은 2022.07.15일부터 적용됩니다. 
+    <button type="button" class="uk-modal-close btn btn-black" style="float: right; position: absolute; right:20px; bottom:20px;background-color:#000; color:#fff;padding:5px 10px;border:0;  cursor:pointer;">닫기</button> 
+   </div> 
+  </div> 
+  <div id="useinfo_text" class="uk-modal"> 
+   <div class="uk-modal-dialog"> 
+    <button type="button" class="uk-modal-close btn btn-black" style="float:right; background-color:#000; color:#fff; padding:5px 10px;border:0;  cursor:pointer;">닫기</button> 
+    <br> 
+    <br> 개인정보 수집 및 이용 동의 
+    <br> 
+    <br> (주)바이오온 (이하 “바이오온”)은 고객의 개인정보를 중요시하며, 『정보통신망이용 촉진 및 정보보호 등에 관한 법률 』 을 준수하고 있습니다. 
+    <br> 바이오온은 개인정보취급방침을 통해 아래와 같이 제공해주시는 개인정보의 수집 및 이용목적과 개인정보보호를 위한 조치 사항을 고지합니다. 
+    <br> 회사는 개인정보취급방침을 개정하는 경우 웹사이트 공지사항(또는 개별공지)을 통하여 공지할 것입니다. 
+    <br> 
+    <br> 1. 수집하는 개인정보 항목 
+    <br> 2. 개인정보의 수집 및 이용목적 
+    <br> 3. 개인정보의 보유 및 이용기간 
+    <br> 4. 개인정보의 파기절차 및 방법 
+    <br> 5. 개인정보 제공 
+    <br> 6. 수집한 개인정보의 위탁 
+    <br> 7. 이용자 및 법정대리인의 권리와 그 행사방법 
+    <br> 8. 개인정보 자동 수집 장치의 설치, 운영 및 그 거부에 관한 사항 
+    <br> 9. 개인정보에 관한 민원서비스 
+    <br> 
+    <br> 1. 개인정보 수집 이용 제공 등에 대한 동의 
+    <br> 바이오온이 제공하는 안내 및 상담신청에 이용자가 제공한 정보는 개인정보취급방침에 명시된 내용 이외의 목적으로는 사용되지 아니합니다. 
+    <br> 
+    <br> 2. 수집하는 개인정보의 범위 및 수집방법 
+    <br> 바이오온은 이용자의 상담신청 및 서비스신청 등을 위한 필수적인 정보를 입력 받고 있습니다. 
+    <br> - 필수정보 : 성명, 연락처, 성별 
+    <br> - 선택정보 : 나이 등 
+    <br> - 서비스 이용과정이나 처리 과정에서 자동으로 생성되어 수집될 수 있는 정보 : IP Address, 참여일시, 유입경로(참여매체) 
+    <br> 
+    <br> 3. 개인정보의 수집 및 이용목적 
+    <br> 입력하신 정보는 개인별 맞춤 서비스 제공, 이벤트 안내(이메일, 전화, MMS 등), 상품안내를 위한 마케팅 자료(전화, 이메일, MMS 등)로 활용 됩니다. 
+    <br> 
+    <br> 4. 개인정보의 보유 및 이용기간 
+    <br>개인정보를 수집 동의일로부터 5년간 보유 및 활용하게 되고, 위 보유기간의 경과 즉시 기록을 재생할 수 없는 기술적 방법을 사용하여 동 개인정보를 파기합니다. 단, 다음의 정보에 대해서는 아래의 이유로 명시한 기간 동안 보존합니다. &lt; 관련법령에 의한 정보 보유 사유 &gt; 
+    <br> - 계약 또는 청약철회 등에 관한 기록 : 5년 
+    <br> - 대금결제 및 재화 등의 공급에 관한 기록 : 5년 
+    <br> - 소비자의 불만 또는 분쟁 처리에 관한 기록 : 3년 
+    <br> 
+    <br> 5. 개인정보의 파기절차 및 방법 
+    <br> 원칙적으로, 개인정보 수집 및 이용목적이 달성되거나, 개인정보 보유 및 이용기간이 종료한 경우 해당 정보를 지체 없이 파기합니다. 파기절차 및 방법은 다음과 같습니다. 
+    <br> &lt; 파기절차 &gt; 
+    <br> 이용자가 참여한 고객정보는 목적이 달성된 후 내부 방침 및 기타 관련 법령에 의한 정보보호 사유에 따라(보유 및 이용기간 참조) 일정기간 저장된 후 파기됩니다. 동 개인정보는 법률에 의한 경우가 아니고서는 보유 이외의 다른 목적으로 이용되지 않습니다. 
+    <br> &lt; 파기방법 &gt; 
+    <br> 종이에 출력된 개인정보는 분쇄기로 분쇄하거나 소각을 통하여 파기하고, 전자적 파일형태로 저장된 개인정보는 기록을 재생할 수 없는 기술적 방법을 사용하여 삭제합니다. 
+    <br> 
+    <br> 6. 개인정보의 안전성 확보 조치 
+    <br> 바이오온은 개인정보의 안전성 확보를 위해 다음과 같은 조치를 취하고 있습니다. 
+    <br> 
+    <br> 1. 관리적 조치 : 내부관리계획 수립·시행 
+    <br> 
+    <br> 2. 기술적 조치 : 개인정보파일에 대한 접근권한 관리, 보안프로그램 설치 
+    <br> 
+    <br> 3. 물리적 조치 : USB, HDD 등의 보조 기억매체를 금고 또는 잠금 장치가 있는 캐비닛에 보관하여 비인가자의 접근을 제한함 
+    <br> 개인정보 접근권한은 임직원 직무별로 최소한의 인원에게 차등화하여 부여하고 있으며, 개인정보 보호 관련 수시 교육을 진행하고 있습니다. 
+    <br> 
+    <br>7. 개인정보 수집 이용 제공 등에 대한 동의 철회 
+    <br>이용자께서는 개인정보의 수집 이용 제공에 대한 동의를 본인 및 법정대리인을 통해 철회할 수 있습니다. 동의철회는 명시된 문의전화 또는 이메일 등을 통해 가능합니다. 
+    <br> 
+    <br> 8. 개인정보 자동 수집 장치의 설치∙운영 및 그 거부에 관한 사항 
+    <br> 바이오온은 쿠키를 사용하지 않습니다. 
+    <br> 
+    <br> 9. 개인정보의 제3자 제공 
+    <br> 바이오온은 이용자의 개인정보를 &lt; 개인정보의 수집목적 및 이용목적 &gt;에서 고지한 범위 내에서 사용하며, 동 범위를 초과하여 이용하거나 타인 또는 타기업, 기관에 제공하지 않습니다. 그러나 보다 나은 서비스 제공을 위하여 필요할 경우, 이용자의 개인정보를 제휴사에게 제공하거나 또는 제휴사와 공유할 수 있습니다. 개인정보를 제공하거나 공유할 경우에는 사전에 이용자의 동의를 구하는 절차를 거치게 됩니다. 
+    <br> 
+    <br> 10. 개인정보 처리 위탁 
+    <br> 수탁자 위탁사무 및 목적 보유 및 이용기간 
+    <br> ㈜이노페이 및 토스에이먼츠 본인인증(금융거래, 금융서비스), 결제대행 고객동의 철회 또는 위탁 계약 만료 때 까지 
+    <br> ㈜다인 시스템 유지 보수 및 관리 고객동의 철회 또는 위탁 계약 만료 때 까지 
+    <br> 000 주문 상품의 배송 고객동의 철회 또는 위탁 계약 만료 때 까지 
+    <br> ㈜첸노 광고에 반응한 상담신청자 개인정보를 서버에 수집, 보관, 처리, 전달, 파기하는 업무 고객동의 철회 또는 위탁 계약 만료 때 까지 
+    <br> 
+    <br> 11. 개인정보관리책임자 및 민원서비스 
+    <br> 이용자의 개인정보를 보호하고 관련한 불만을 처리하기 위하여 바이오온은 개인정보관리책임자를 두어 개인정보를 관리하고 있습니다. 
+    <br> [개인정보관리책임자] 
+    <br> - 성 명 : 김덕률 
+    <br> - 직 책 : 이사 
+    <br> - 이메일 : drkim@cenno.co.kr 
+    <br> - 연락처 : 042-489-7994 
+    <br> - FAX : 042-489-7995 
+    <br> [개인정보 보호 담당부서] 
+    <br> - 성 명 : 김덕률 
+    <br> - 직 책 : 이사 
+    <br> - 이메일 : drkim@cenno.co.kr 
+    <br> - 연락처 : 042-489-7994 
+    <br> - FAX : 042-489-7995 
+    <br> 
+    <br> 이용자께서는 바이오온의 서비스(또는 사업)을 이용하시면서 발생한 모든 개인정보 보호 관련 문의, 불만처리, 피해구제 등에 관한 사항을 개인정보 관리책임자 및 담당부서로 문의하실 수 있습니다. 바이오온은 정보주체 또는 법정 대리인의 문의에 대해 지체없이 조치하겠습니다. 
+    <br> 
+    <br> 12. 정보주체 및 법정대리인의 권리와 그 행사방법 
+    <br> ① 정보주체는 바이오온에 대해 언제든지 개인정보 열람·정정·삭제·처리정지 요구 등의 권리를 행사할 수 있습니다. 
+    <br> ② 제1항에 따른 권리 행사는 바이오온에 대해 개인정보보호법 시행령 제41조제1항에 따라 서면, 전자우편, 모사전송(FAX) 등을 통하여 하실 수 있으며, 바이오온은 이에 대해 지체없이 조치하겠습니다. 
+    <br> ③ 제1항에 따른 권리 행사는 정보주체의 법정대리인이나 위임을 받은 자 등 대리인을 통하여 하실 수 있습니다. 이 경우 개인정보 보호법 시행규칙 별지 제11호 서식에 따른 위임장을 제출하셔야 합니다. 
+    <br> ④ 개인정보 열람 및 처리정지 요구는 개인정보보호법 제35조 제5항, 제37조 제2항에 의하여 정보주체의 권리가 제한 될 수 있습니다. 
+    <br> ⑤ 개인정보의 정정 및 삭제 요구는 다른 법령에서 그 개인정보가 수집 대상으로 명시되어 있는 경우에는 그 삭제를 요구할 수 없습니다. 
+    <br> ⑥ 바이오온은 정보주체 권리에 따른 열람의 요구, 정정·삭제의 요구, 처리정지의 요구 시 열람 등 요구를 한 자가 본인이거나 정당한 대리인인지를 확인합니다. 
+    <br> 
+    <br> 13. 개인정보 열람청구 
+    <br> 이용자는 개인정보 보호법 제35조에 따른 개인정보의 열람 청구를 아래의 부서에 할 수 있습니다. 바이오온은 이용자의 개인정보 열람청구가 신속하게 처리되도록 노력하겠습니다. 
+    <br> [개인정보관리자] 
+    <br> - 성 명 : 김덕률 
+    <br> - 직 책 : 이사 
+    <br> - 이메일 : drkim@cenno.co.kr 
+    <br> - 연락처 : 042-489-7994 
+    <br> - FAX : 042-489-7995 
+    <br> 
+    <br> 14. 만 14 세 미만 아동의 개인정보보호 
+    <br> 바이오온은 법정 대리인의 동의가 필요한 만 14세 미만 아동의 회원 가입은 받고 있지 않습니다. 
+    <br> 15. 권익침해 구제방법 
+    <br> 이용자는 아래의 기관에 대해 개인정보 침해에 대한 피해구제, 상담 등을 문의하실 수 있습니다. 
+    <br> [아래의 기관은 바이오온과는 별개의 기관으로서, 바이오온의 자체적인 개인정보 불만처리, 피해구제 결과에 만족하지 못하시거나 보다 자세한 도움이 필요하시면 문의하여 주시기 바랍니다] 
+    <br> 가. 개인정보보호 종합지원 포털 (행정안전부 운영) 
+    <br> - 소관업무 : 개인정보 침해사실 신고, 상담 신청, 자료제공 
+    <br> - 홈페이지 : www.privacy.go.kr 
+    <br> - 전화 : 02-2100-3394 
+    <br> 나. 개인정보 침해신고센터 (한국인터넷진흥원 운영) 
+    <br> - 소관업무 : 개인정보 침해사실 신고, 상담 신청 
+    <br> - 홈페이지 : privacy.kisa.or.kr 
+    <br> - 전화 : (국번없이) 118 
+    <br> 다. 개인정보 분쟁조정위원회 (한국인터넷진흥원 운영) 
+    <br> 
+    <br> - 소관업무 : 개인정보 분쟁조정신청, 집단분쟁조정 (민사적 해결) 
+    <br> - 홈페이지 : privacy.kisa.or.kr 
+    <br> - 전화 : (국번없이) 118 
+    <br> 라. 경찰청 사이버테러대응센터 
+    <br> - 소관업무 : 개인정보 침해 관련 형사사건 문의 및 신고 
+    <br> - 홈페이지 : www.netan.go.kr 
+    <br> - 전화 : (사이버범죄) 02-393-9112 (경찰청 대표) 1566-0112 
+    <br> 
+    <br> 
+    <table style="border: 1px solid #000;"> 
+     <tbody> 
+      <tr> 
+       <th>수탁자</th> 
+       <th>위탁사무 및 목적</th> 
+       <th>보유 및 이용기간</th> 
+      </tr> 
+      <tr> 
+       <td>주식회사 바이오온</td> 
+       <td>회원 정보 DB시스템 운영/관리 업무고객 통화, 이메일, 문자메시지 발송제품의 상담 및 판매, 배송 등의 전반고객상담 및 불만처리 업무 전반</td> 
+       <td>고객동의 철회 또는 위탁 계약 만료 때 까지</td> 
+      </tr> 
+      <tr> 
+       <td>이노페이 및 토스페이먼츠</td> 
+       <td>본인인증(금융거래, 금융서비스)결제대행</td> 
+       <td>고객동의 철회 또는 위탁 계약 만료 때 까지</td> 
+      </tr> 
+      <tr> 
+       <td>택배사</td> 
+       <td>주문 상품의 배송</td> 
+       <td>고객동의 철회 또는 위탁 계약 만료 때 까지</td> 
+      </tr> 
+      <tr> 
+       <td>㈜첸노</td> 
+       <td>광고에 반응한 상담신청자 개인정보를 서버에 수집, 보관, 처리, 전달, 파기하는 업무</td> 
+       <td>고객동의 철회 또는 위탁 계약 만료 때 까지</td> 
+      </tr> 
+      <tr> 
+       <td>㈜다인</td> 
+       <td>시스템 유지 보수 및 관리</td> 
+       <td>고객동의 철회 또는 위탁 계약 만료 때 까지</td> 
+      </tr> 
+     </tbody> 
+    </table> 
+    <br> 16. 정책 변경에 따른 공지의무 
+    <br> 현 개인정보처리방침은 2022.07.15일부터 적용됩니다. 
+    <button type="button" class="uk-modal-close btn btn-black" style="float: right; position: absolute; right:20px; bottom:20px;background-color:#000; color:#fff; padding:5px 10px;border:0;  cursor:pointer;">닫기</button> 
+   </div> 
+  </div> 
+  <div id="marketing_text" class="uk-modal"> 
+   <div class="uk-modal-dialog"> 
+    <button type="button" class="uk-modal-close btn btn-black" style="float:right; background-color:#000; color:#fff; padding:5px 10px;border:0;  cursor:pointer;">닫기</button> 
+    <br> 
+    <br> 개인정보 수집 및 이용 동의 
+    <br> 
+    <br> (주)바이오온 (이하 “바이오온”)은 고객의 개인정보를 중요시하며, 『정보통신망이용 촉진 및 정보보호 등에 관한 법률 』 을 준수하고 있습니다. 
+    <br> 바이오온은 개인정보취급방침을 통해 아래와 같이 제공해주시는 개인정보의 수집 및 이용목적과 개인정보보호를 위한 조치 사항을 고지합니다. 
+    <br> 회사는 개인정보취급방침을 개정하는 경우 웹사이트 공지사항(또는 개별공지)을 통하여 공지할 것입니다. 
+    <br> 
+    <br> 1. 수집하는 개인정보 항목 
+    <br> 2. 개인정보의 수집 및 이용목적 
+    <br> 3. 개인정보의 보유 및 이용기간 
+    <br> 4. 개인정보의 파기절차 및 방법 
+    <br> 5. 개인정보 제공 
+    <br> 6. 수집한 개인정보의 위탁 
+    <br> 7. 이용자 및 법정대리인의 권리와 그 행사방법 
+    <br> 8. 개인정보 자동 수집 장치의 설치, 운영 및 그 거부에 관한 사항 
+    <br> 9. 개인정보에 관한 민원서비스 
+    <br> 
+    <br> 1. 개인정보 수집 이용 제공 등에 대한 동의 
+    <br> 바이오온이 제공하는 안내 및 상담신청에 이용자가 제공한 정보는 개인정보취급방침에 명시된 내용 이외의 목적으로는 사용되지 아니합니다. 
+    <br> 
+    <br> 2. 수집하는 개인정보의 범위 및 수집방법 
+    <br> 바이오온은 이용자의 상담신청 및 서비스신청 등을 위한 필수적인 정보를 입력 받고 있습니다. 
+    <br> - 필수정보 : 성명, 연락처, 성별 
+    <br> - 선택정보 : 나이 등 
+    <br> - 서비스 이용과정이나 처리 과정에서 자동으로 생성되어 수집될 수 있는 정보 : IP Address, 참여일시, 유입경로(참여매체) 
+    <br> 
+    <br> 3. 개인정보의 수집 및 이용목적 
+    <br> 입력하신 정보는 개인별 맞춤 서비스 제공, 이벤트 안내(이메일, 전화, MMS 등), 상품안내를 위한 마케팅 자료(전화, 이메일, MMS 등)로 활용 됩니다. 
+    <br> 
+    <br> 4. 개인정보의 보유 및 이용기간 
+    <br>개인정보를 수집 동의일로부터 5년간 보유 및 활용하게 되고, 위 보유기간의 경과 즉시 기록을 재생할 수 없는 기술적 방법을 사용하여 동 개인정보를 파기합니다. 단, 다음의 정보에 대해서는 아래의 이유로 명시한 기간 동안 보존합니다. &lt; 관련법령에 의한 정보 보유 사유 &gt; 
+    <br> - 계약 또는 청약철회 등에 관한 기록 : 5년 
+    <br> - 대금결제 및 재화 등의 공급에 관한 기록 : 5년 
+    <br> - 소비자의 불만 또는 분쟁 처리에 관한 기록 : 3년 
+    <br> 
+    <br> 5. 개인정보의 파기절차 및 방법 
+    <br> 원칙적으로, 개인정보 수집 및 이용목적이 달성되거나, 개인정보 보유 및 이용기간이 종료한 경우 해당 정보를 지체 없이 파기합니다. 파기절차 및 방법은 다음과 같습니다. 
+    <br> &lt; 파기절차 &gt; 
+    <br> 이용자가 참여한 고객정보는 목적이 달성된 후 내부 방침 및 기타 관련 법령에 의한 정보보호 사유에 따라(보유 및 이용기간 참조) 일정기간 저장된 후 파기됩니다. 동 개인정보는 법률에 의한 경우가 아니고서는 보유 이외의 다른 목적으로 이용되지 않습니다. 
+    <br> &lt; 파기방법 &gt; 
+    <br> 종이에 출력된 개인정보는 분쇄기로 분쇄하거나 소각을 통하여 파기하고, 전자적 파일형태로 저장된 개인정보는 기록을 재생할 수 없는 기술적 방법을 사용하여 삭제합니다. 
+    <br> 
+    <br> 6. 개인정보의 안전성 확보 조치 
+    <br> 바이오온은 개인정보의 안전성 확보를 위해 다음과 같은 조치를 취하고 있습니다. 
+    <br> 
+    <br> 1. 관리적 조치 : 내부관리계획 수립·시행 
+    <br> 
+    <br> 2. 기술적 조치 : 개인정보파일에 대한 접근권한 관리, 보안프로그램 설치 
+    <br> 
+    <br> 3. 물리적 조치 : USB, HDD 등의 보조 기억매체를 금고 또는 잠금 장치가 있는 캐비닛에 보관하여 비인가자의 접근을 제한함 
+    <br> 개인정보 접근권한은 임직원 직무별로 최소한의 인원에게 차등화하여 부여하고 있으며, 개인정보 보호 관련 수시 교육을 진행하고 있습니다. 
+    <br> 
+    <br>7. 개인정보 수집 이용 제공 등에 대한 동의 철회 
+    <br>이용자께서는 개인정보의 수집 이용 제공에 대한 동의를 본인 및 법정대리인을 통해 철회할 수 있습니다. 동의철회는 명시된 문의전화 또는 이메일 등을 통해 가능합니다. 
+    <br> 
+    <br> 8. 개인정보 자동 수집 장치의 설치∙운영 및 그 거부에 관한 사항 
+    <br> 바이오온은 쿠키를 사용하지 않습니다. 
+    <br> 
+    <br> 9. 개인정보의 제3자 제공 
+    <br> 바이오온은 이용자의 개인정보를 &lt; 개인정보의 수집목적 및 이용목적 &gt;에서 고지한 범위 내에서 사용하며, 동 범위를 초과하여 이용하거나 타인 또는 타기업, 기관에 제공하지 않습니다. 그러나 보다 나은 서비스 제공을 위하여 필요할 경우, 이용자의 개인정보를 제휴사에게 제공하거나 또는 제휴사와 공유할 수 있습니다. 개인정보를 제공하거나 공유할 경우에는 사전에 이용자의 동의를 구하는 절차를 거치게 됩니다. 
+    <br> 
+    <br> 10. 개인정보 처리 위탁 
+    <br> 수탁자 위탁사무 및 목적 보유 및 이용기간 
+    <br> ㈜이노페이 및 토스에이먼츠 본인인증(금융거래, 금융서비스), 결제대행 고객동의 철회 또는 위탁 계약 만료 때 까지 
+    <br> ㈜다인 시스템 유지 보수 및 관리 고객동의 철회 또는 위탁 계약 만료 때 까지 
+    <br> 000 주문 상품의 배송 고객동의 철회 또는 위탁 계약 만료 때 까지 
+    <br> ㈜첸노 광고에 반응한 상담신청자 개인정보를 서버에 수집, 보관, 처리, 전달, 파기하는 업무 고객동의 철회 또는 위탁 계약 만료 때 까지 
+    <br> 
+    <br> 11. 개인정보관리책임자 및 민원서비스 
+    <br> 이용자의 개인정보를 보호하고 관련한 불만을 처리하기 위하여 바이오온은 개인정보관리책임자를 두어 개인정보를 관리하고 있습니다. 
+    <br> [개인정보관리책임자] 
+    <br> - 성 명 : 김덕률 
+    <br> - 직 책 : 이사 
+    <br> - 이메일 : drkim@cenno.co.kr 
+    <br> - 연락처 : 042-489-7994 
+    <br> - FAX : 042-489-7995 
+    <br> [개인정보 보호 담당부서] 
+    <br> - 성 명 : 김덕률 
+    <br> - 직 책 : 이사 
+    <br> - 이메일 : drkim@cenno.co.kr 
+    <br> - 연락처 : 042-489-7994 
+    <br> - FAX : 042-489-7995 
+    <br> 
+    <br> 이용자께서는 바이오온의 서비스(또는 사업)을 이용하시면서 발생한 모든 개인정보 보호 관련 문의, 불만처리, 피해구제 등에 관한 사항을 개인정보 관리책임자 및 담당부서로 문의하실 수 있습니다. 바이오온은 정보주체 또는 법정 대리인의 문의에 대해 지체없이 조치하겠습니다. 
+    <br> 
+    <br> 12. 정보주체 및 법정대리인의 권리와 그 행사방법 
+    <br> ① 정보주체는 바이오온에 대해 언제든지 개인정보 열람·정정·삭제·처리정지 요구 등의 권리를 행사할 수 있습니다. 
+    <br> ② 제1항에 따른 권리 행사는 바이오온에 대해 개인정보보호법 시행령 제41조제1항에 따라 서면, 전자우편, 모사전송(FAX) 등을 통하여 하실 수 있으며, 바이오온은 이에 대해 지체없이 조치하겠습니다. 
+    <br> ③ 제1항에 따른 권리 행사는 정보주체의 법정대리인이나 위임을 받은 자 등 대리인을 통하여 하실 수 있습니다. 이 경우 개인정보 보호법 시행규칙 별지 제11호 서식에 따른 위임장을 제출하셔야 합니다. 
+    <br> ④ 개인정보 열람 및 처리정지 요구는 개인정보보호법 제35조 제5항, 제37조 제2항에 의하여 정보주체의 권리가 제한 될 수 있습니다. 
+    <br> ⑤ 개인정보의 정정 및 삭제 요구는 다른 법령에서 그 개인정보가 수집 대상으로 명시되어 있는 경우에는 그 삭제를 요구할 수 없습니다. 
+    <br> ⑥ 바이오온은 정보주체 권리에 따른 열람의 요구, 정정·삭제의 요구, 처리정지의 요구 시 열람 등 요구를 한 자가 본인이거나 정당한 대리인인지를 확인합니다. 
+    <br> 
+    <br> 13. 개인정보 열람청구 
+    <br> 이용자는 개인정보 보호법 제35조에 따른 개인정보의 열람 청구를 아래의 부서에 할 수 있습니다. 바이오온은 이용자의 개인정보 열람청구가 신속하게 처리되도록 노력하겠습니다. 
+    <br> [개인정보관리자] 
+    <br> - 성 명 : 김덕률 
+    <br> - 직 책 : 이사 
+    <br> - 이메일 : drkim@cenno.co.kr 
+    <br> - 연락처 : 042-489-7994 
+    <br> - FAX : 042-489-7995 
+    <br> 
+    <br> 14. 만 14 세 미만 아동의 개인정보보호 
+    <br> 바이오온은 법정 대리인의 동의가 필요한 만 14세 미만 아동의 회원 가입은 받고 있지 않습니다. 
+    <br> 15. 권익침해 구제방법 
+    <br> 이용자는 아래의 기관에 대해 개인정보 침해에 대한 피해구제, 상담 등을 문의하실 수 있습니다. 
+    <br> [아래의 기관은 바이오온과는 별개의 기관으로서, 바이오온의 자체적인 개인정보 불만처리, 피해구제 결과에 만족하지 못하시거나 보다 자세한 도움이 필요하시면 문의하여 주시기 바랍니다] 
+    <br> 가. 개인정보보호 종합지원 포털 (행정안전부 운영) 
+    <br> - 소관업무 : 개인정보 침해사실 신고, 상담 신청, 자료제공 
+    <br> - 홈페이지 : www.privacy.go.kr 
+    <br> - 전화 : 02-2100-3394 
+    <br> 나. 개인정보 침해신고센터 (한국인터넷진흥원 운영) 
+    <br> - 소관업무 : 개인정보 침해사실 신고, 상담 신청 
+    <br> - 홈페이지 : privacy.kisa.or.kr 
+    <br> - 전화 : (국번없이) 118 
+    <br> 다. 개인정보 분쟁조정위원회 (한국인터넷진흥원 운영) 
+    <br> 
+    <br> - 소관업무 : 개인정보 분쟁조정신청, 집단분쟁조정 (민사적 해결) 
+    <br> - 홈페이지 : privacy.kisa.or.kr 
+    <br> - 전화 : (국번없이) 118 
+    <br> 라. 경찰청 사이버테러대응센터 
+    <br> - 소관업무 : 개인정보 침해 관련 형사사건 문의 및 신고 
+    <br> - 홈페이지 : www.netan.go.kr 
+    <br> - 전화 : (사이버범죄) 02-393-9112 (경찰청 대표) 1566-0112 
+    <br> 
+    <br> 
+    <table style="border: 1px solid #000;"> 
+     <tbody> 
+      <tr> 
+       <th>수탁자</th> 
+       <th>위탁사무 및 목적</th> 
+       <th>보유 및 이용기간</th> 
+      </tr> 
+      <tr> 
+       <td>주식회사 바이오온</td> 
+       <td>회원 정보 DB시스템 운영/관리 업무고객 통화, 이메일, 문자메시지 발송제품의 상담 및 판매, 배송 등의 전반고객상담 및 불만처리 업무 전반</td> 
+       <td>고객동의 철회 또는 위탁 계약 만료 때 까지</td> 
+      </tr> 
+      <tr> 
+       <td>이노페이 및 토스페이먼츠</td> 
+       <td>본인인증(금융거래, 금융서비스)결제대행</td> 
+       <td>고객동의 철회 또는 위탁 계약 만료 때 까지</td> 
+      </tr> 
+      <tr> 
+       <td>택배사</td> 
+       <td>주문 상품의 배송</td> 
+       <td>고객동의 철회 또는 위탁 계약 만료 때 까지</td> 
+      </tr> 
+      <tr> 
+       <td>㈜첸노</td> 
+       <td>광고에 반응한 상담신청자 개인정보를 서버에 수집, 보관, 처리, 전달, 파기하는 업무</td> 
+       <td>고객동의 철회 또는 위탁 계약 만료 때 까지</td> 
+      </tr> 
+      <tr> 
+       <td>㈜다인</td> 
+       <td>시스템 유지 보수 및 관리</td> 
+       <td>고객동의 철회 또는 위탁 계약 만료 때 까지</td> 
+      </tr> 
+     </tbody> 
+    </table> 
+    <br> 16. 정책 변경에 따른 공지의무 
+    <br> 현 개인정보처리방침은 2022.07.15일부터 적용됩니다. 
+    <button type="button" class="uk-modal-close btn btn-black" style="float: right; position: absolute; right:20px; bottom:20px;background-color:#000; color:#fff; padding:5px 10px;border:0; cursor:pointer;">닫기</button> 
+   </div> 
+  </div> 
+  <!-- 개인정보 수집동의 끝 --> 
+  <script type="text/javascript">
+        function closeMediInt() {
+            $("#agreement_text").hide();
+        }
+
+    </script>  
+ </body>
+</html>
