@@ -128,25 +128,33 @@ h1, h2, h3, h4, h5, h6, p, span {
     }
 
     .page_center .page_title_flex h2 {
-        font-size:7.26254vw;
+        font-size:64px;
     }
 
     .text_box .bold {
-        font-size: 4.3266987vw;
+        font-size: 48px;
     }
 
     .page_center .text_box .com_box .comment {
-        font-size: 1.5988632vw;
-        line-height: 3.1988632vw;
+        font-size: 24px;
+        line-height: 1.465;
     }
 
     .page_center .text_box .com_box .comment p {
         margin-bottom: 0;
         padding-top: 3.775132vw;
     }
+
+    .hide_766 {
+        display: block;
+    }
 }
 
 @media only screen and (max-width:766px) {
+    .hide_766 {
+        display: none;
+    }
+
     .sec0_bg_txt {
         top: 35.046373vw;
         left: -2.33645vw;
@@ -169,10 +177,8 @@ h1, h2, h3, h4, h5, h6, p, span {
 
     .text_box .bold {
         padding-top: 10.2659687vw;
-    }
-
-    .text_box .bold p {
         font-size: 9.34579vw;
+        line-height: 1.3;
     }
 
     .com_box {
