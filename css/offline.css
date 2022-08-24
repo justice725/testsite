@@ -1,0 +1,159 @@
+@charset "utf-8";
+
+body {
+    overflow-x: hidden;
+}
+
+.page_wrap {
+    width: 100%;
+    position: relative;
+}
+
+.page_wrap_inner {
+    width: 100%;
+}
+
+.section1 {
+    width: 100%;
+    position: relative;
+    background-image: url(../img/offline_section1_bg_1.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section1_inner {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo_box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text_box {
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    padding: 50px 0;
+}
+
+.text_box .text_st_1 {
+    font-size: 36px;
+    font-family: 'NanumGothic';
+    line-height: 1.4;
+}
+
+.text_box .text_st_1 span {
+    font-family: 'NanumGothicExtraBold';
+}
+
+.icon_box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon_box .off_icon {
+    width: 170px;
+}
+
+.icon_box .arrow {
+    padding: 0 10px;
+}
+
+.section2 {
+    width: 100%;
+    position: relative;
+}
+
+.section2_inner {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 100px 20px;
+}
+
+.section2_title_box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.section2_title_box .title_st_1 {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-family: 'NanumGothicExtraBold';
+    font-size: 54px;
+    color: #1e1e1e;
+    line-height: 1.4;
+}
+
+.section2_title_box .little_title {
+    color: #1753b7;
+    letter-spacing: 10px;
+    font-size: 22px;
+    font-family: 'NanumGothicExtraBold';
+}
+
+.section2_title_box .text_st_1 {
+    font-size: 18px;
+    color: #3c3c3c;
+    text-align: center;
+    line-height: 1.4;
+    padding-bottom: 50px;
+}
+
+.section2_inner .card_box {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.section2_inner .card_box .card_1 {
+    width: 30%;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: #ececec;
+}
+
+.section2_inner .card_box .card_1 .card_text_box {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    padding-top: 0;
+}
+
+.section2_inner .card_box .card_1 .card_text_box .text_st_2 {
+    padding: 20px 0;
+    font-family: 'NanumGothicExtraBold';
+    font-size: 18px;
+}
+
+.section2_inner .card_box .card_1 .card_text_box .text_st_3  {
+    line-height: 1.4;
+}
+
+.margin_bot {
+    margin-bottom: 50px;
+}
