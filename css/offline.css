@@ -157,3 +157,7 @@ body {
 .margin_bot {
     margin-bottom: 50px;
 }
+
+.sub_main__visual {
+    background-image: url(../img/offline_banner_1.png) !important;
+}

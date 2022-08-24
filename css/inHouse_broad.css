@@ -238,3 +238,7 @@ body {
         font-size: 4.854687651vw;
     }
 }
+
+.sub_main__visual {
+    background-image: url(../img/inhouse_bg.png) !important;
+}

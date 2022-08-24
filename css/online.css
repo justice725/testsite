@@ -817,3 +817,7 @@ body {
     padding-top: 70px;
     margin-bottom:-5px;
 }
+
+.sub_main__visual {
+    background-image: url(../img/online_banner_1.png) !important;
+}
