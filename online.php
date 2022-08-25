@@ -73,10 +73,10 @@
                     <div>광고서비스<i class="fa-solid fa-chevron-down"></i>
                         <div class="page_nav__sub">
                             <ul>
-                                <li><a href="./online.php" class="">온라인광고<i class="fa-solid fa-arrow-right-long right_arow"></i></a></li>
+                                <li><a href="./online.php" class="on">온라인광고<i class="fa-solid fa-arrow-right-long right_arow"></i></a></li>
                                 <li><a href="./broadcast.php" class="">TV방송광고<i class="fa-solid fa-arrow-right-long right_arow"></i></a></li>
                                 <li><a href="./offline.php" class="">오프라인광고<i class="fa-solid fa-arrow-right-long right_arow"></i></a></li>
-                                <li><a href="./inHouse_broad.php" class="on">사내방송광고<i class="fa-solid fa-arrow-right-long right_arow"></i></a></li>
+                                <li><a href="./inHouse_broad.php" class="">사내방송광고<i class="fa-solid fa-arrow-right-long right_arow"></i></a></li>
 
                             </ul>
                         </div>
