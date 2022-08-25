@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="첸노_서브페이지">
+    <meta name="keywords" content="첸노_서브페이지">
+    <meta name="author" content="첸노_서브페이지">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+
+    <title>첸노</title>
+
+    <!-- 폰트어썸 cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+    <script src="https://kit.fontawesome.com/3de435d34b.js" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="./js/jquery.mousewheel.min.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
+
+    <script src="./js/inHouse_broad.js"></script>
+
+    <link rel="stylesheet" href="./css/font.css">
+    <!-- 기본 css start -->
+    <link rel="stylesheet" href="./css/default.css"> <!-- 서브페이지 공통스타일도 같이 들어있음 -->
+    
+    <!-- 기본 css end -->
+
+    <!-- 첸노 헤더 start -->
+    <link rel="stylesheet" href="./css/header.css">
+    <script src="./js/header.js"></script>
+    <script src="./js/sub_nav.js"></script>
+    <!-- 첸노 헤더 end -->
+
+    <!-- 첸노 푸터 start -->
+    <link rel="stylesheet" href="./css/footer.css">
+    <!-- 첸노 푸터 end -->
+
+    <!-- 개별 페이지 스타일 start -->
+    <link rel="stylesheet" href="./css/inHouse_broad.css">
+    <!-- 개별 페이지 스타일 end -->
+
+    <!-- 반응형 쿼리 start -->
+    <link rel="stylesheet" href="./css/common_media.css">
+    <!-- 반응형 쿼리 end -->
+</head>
+<body>
+   <!-- @@@@@@@@@@@@@@@@@@@@@@@@ 헤더 페이지 변경 x @@@@@@@@@@@@@@@@@@@@@@@@ -->
+   <!-- 첸노 헤더 start -->
+   <header id="hd">
+    <nav id="nav">
+
+        <div class="hd_logo">
+            <a href="./index.php">
+                <!--<img src="./img/hd_logo.png" alt="">-->
+            </a>
+        </div>
+
+        <div class="manu">
+            <a href="./introduce.php" class="nav_list nav_list1">기업소개</a>
+            <a href="./sub.html" class="nav_list nav_list2">광고마케팅</a>
+            <a href="./sub.html" class="nav_list nav_list3">솔루션서비스</a>
+            <a href="./sub.html" class="nav_list nav_list4">R&amp;D</a>
+            <!--<a href="./sub.html" class="nav_list nav_list6">상품마케팅</a>-->
+            <a href="./talent/index.php" class="nav_list nav_list5">인재채용</a>
+            <a href="./talent/index.php" class="nav_list nav_list7">커뮤니티</a>
+        </div>
+
+        <div class="sitemap">
+            <input class="burger-check" type="checkbox" id="burger-check" /><label class="burger-icon" for="burger-check"><span class="burger-sticks"></span></label>
+            <div class="burger_sitemap">
+                <div class="box">
+                    <div class="box_fr">
+                        <nav class="ul">
+                            <ul class="fnb">
+                                <li class="fnb_li_1 on1">
+                                    <a href="./introduce.php" class="fnbA"><span>기업 소개</span> <span class="span_bar"></span></a>
+                                    <ul class="sub_1 sub">
+                                        <li class="on1"><a href="./introduce.php"> <span>회사 소개</span> <span class="span_bar"></span></a></li>
+                                        <li class="on1"><a href="./greet.php"> <span>CEO인사말</span> <span class="span_bar"></span></a></li>
+                                        <li class="on1"><a href="./history.php"> <span>회사 연혁</span> <span class="span_bar"></span></a></li>
+                                        <li class="on1"><a href="./map.php"> <span>오시는 길</span> <span class="span_bar"></span></a></li>
+                                    </ul>
+                                </li>
+                                <li class="fnb_li_2 on1">
+                                    <a href="./sub.html" class="fnbA"><span>광고마케팅</span> <span class="span_bar"></span></a>
+                                    <ul class="sub_2 sub">
+                                        <li class="on1"><a href="./sub.html"> <span>온라인광고</span> <span class="span_bar"></span></a></li>
+                                        <li class="on1"><a href="./sub.html"> <span>TV광고</span> <span class="span_bar"></span></a></li>
+                                        <li class="on1"><a href="./sub.html"> <span>오프라인광고</span> <span class="span_bar"></span></a></li>
+                                        <li class="on1"><a href="./sub.html"> <span>사내방송</span> <span class="span_bar"></span></a></li>
+                                    </ul>
+                                </li>
+                                <li class="fnb_li_3 on1">
+                                    <a href="./sub.html" class="fnbA"><span>솔루션서비스</span> <span class="span_bar"></span></a>
+                                    <ul class="sub_3 sub">
+                                        <li class="on1"><a href="./sub.html"> <span>고객관리 프로그램</span> <span class="span_bar"></span></a></li>
+                                        <li class="on1"><a href="./sub.html"> <span>유지보수 SI</span> <span class="span_bar"></span></a></li>
+                                        <li class="on1"><a href="./sub.html"> <span>홈페이지 제작</span> <span class="span_bar"></span></a></li>
+                                    </ul>
+                                </li>
+                                <li class="fnb_li_4 on1">
+                                    <a href="./sub.html" class="fnbA"><span>R&amp;D</span> <span class="span_bar"></span></a>
+                                    <ul class="sub_4 sub">
+                                       <li class="on1"><a href="./sub.html"> <span>프로그램개발</span> <span class="span_bar"></span></a></li>
+                                        <li class="on1"><a href="./sub.html"> <span>연구개발</span> <span class="span_bar"></span></a></li>
+                                    </ul>
+                                </li>
+                                <li class="fnb_li_5 on1">
+                                    <a href="./talent/index.php" class="fnbA"><span>인재채용</span> <span class="span_bar"></span></a>
+                                    <ul class="sub_5 sub">
+                                        <li class="on1"><a href="./sub.html"> <span>인재상</span> <span class="span_bar"></span></a></li>
+                                        <li class="on1"><a href="./sub.html"> <span>채용공고</span> <span class="span_bar"></span></a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="menu_foot">
+                            <div class="address">
+                                <p>대전 서구 둔산대로117번길 95 리더스타운 B동 7층</p>
+                                <p>Tel : 042-489-7994</p>
+                                <p>Fax : 042-489-7995</p>
+                            </div>
+                            <div class="icon">
+                                <img src="./img/menu_logo.png" alt="#">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </nav>
+</header>
+
+<div class="hd_visual">
+    <div class="manu">
+        <div class="menu_sub__1" style="padding: 0">
+            <a href="./introduce.php" style="display: none;">회사 소개</a>
+            <a href="./greet.php" style="display: none;">CEO 인사말</a>
+            <a href="./history.php" style="display: none;">회사 연혁</a>
+            <a href="./map.php" style="display: none;">오시는 길</a>
+        </div>
+        <div class="menu_sub__2" style="padding: 0">
+            <a href="" style="display: none;">온라인 광고</a>
+            <a href="" style="display: none;">TV방송 광고</a>
+            <a href="" style="display: none;">오프라인 광고</a>
+            <a href="" style="display: none;">사내 방송</a>
+        </div>
+        <div class="menu_sub__3" style="padding: 0">
+            <a href="" style="display: none;">고객관리 프로그램</a>
+            <a href="" style="display: none;">유지보수 SI</a>
+            <a href="" style="display: none;">홈페이지 제작</a>
+        </div>
+        <div class="menu_sub__4" style="padding: 0">
+            <a href="" style="display: none;">연구 개발</a>
+            <a href="" style="display: none;">프로그램 개발</a>
+            <a href="" style="display: none;">벤처 사업</a>
+        </div>
+        
+        <!--<div class="menu_sub__6" style="padding: 0">
+            <a href="" style="display: none;">얼씨구넷</a>
+        </div>-->
+        
+        <div class="menu_sub__5" style="padding: 0">
+            <a href="./talent/index.php" style="display: none;">인재상</a>
+            <a href="./talent/index.php" style="display: none;">직무소개</a>
+            <a href="./talent/index.php" style="display: none;">채용 절차</a>
+            <a href="./talent/index.php" style="display: none;">채용 공고</a>
+        </div>
+        
+        <div class="menu_sub__7" style="padding: 0">
+            <a href="./board/board.php" style="display: none;">공지사항</a>
+            <a href="./board/cs_center.php" style="display: none;">1:1문의</a>
+        </div>
+        
+        
+    </div>
+</div>
+    <!-- 페이지 맵 네비게이션 끝 -->
+    <!-- @@@@@@@@@@@@@@@@@@@@@@@@ 헤더 페이지 변경 x @@@@@@@@@@@@@@@@@@@@@@@@ -->
+
+    <!-- @@@@@@@@@@@@@@@@@@@@@@@@ 페이지 수정start @@@@@@@@@@@@@@@@@@@@@@@@ -->
+            <section class="page_wrap">
+                <div class="page_wrap_inner">
+                    <article class="section1">
+                        <div class="section1_inner">
+                            <div class="text_box">
+                                <h2 class="title_st1">
+                                    첸노와 함께 하세요!
+                                </h2>
+                                <p class="text_st1">
+                                    디지털 방송 기반의 상품 정보 제공 시스템, 초음파 신호를 포함한 <br class="hide_680"> 디지털 방송 시스템과 이를 이용한 외부기기 동작 방법 등 <br class="hide_680"> 많은 특허와 기업부설 연구소 인증을 받은 첸노의 발전은 무궁무진합니다.
+                                </p>
+                            </div>
+                            <div class="img_box">   
+                                <img src="./img/inhouse_certification_1.png" alt="#">
+                                <img src="./img/inhouse_certification_2.png" alt="#">
+                                <img src="./img/inhouse_certification_3.png" alt="#">
+                                <br class="show_1180">
+                                <img src="./img/inhouse_certification_4.png" alt="#" class="margin_top">
+                                <img src="./img/inhouse_certification_5.png" alt="#" class="margin_top">
+                            </div>
+                        </div>
+                    </article>
+                    <article class="section2">
+                        <div class="section2_text_box">
+                            <p class="little_title">INHOUSE BROADCAST</p>
+                            <h4 class="title_st_1">사내광고</h4>
+                            <span class="text_st_1">IP네트워크와 위성방송을 통해 고객맞춤형 시스템을 개발합니다.</span>
+                        </div>
+                        <div class="section2_bg_box">
+                            <img src="./img/inhouse_section2_bg_1.png" alt="#" class="pc_img">
+                            <img src="./img/inhouse_section2_bg_1_mo.png" alt="#" class="mo_img">
+                        </div>
+                        <div class="section2_img_box">
+                            <div class="section2_img_box_inner">
+                                <img src="./img/inhouse_icon_1.png" alt="#" class="pc_img">
+                                <img src="./img/inhouse_icon_2.png" alt="#" class="pc_img">
+                                <img src="./img/inhouse_icon_1_mo.png" alt="#" class="mo_img">
+                                <img src="./img/inhouse_icon_2_mo.png" alt="#" class="mo_img">
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <!-- @@@@@@@@@@@@@@@@@@@@@@@@ 페이지 수정end @@@@@@@@@@@@@@@@@@@@@@@@ -->
+
+            <!-- @@@@@@@@@@@@@@@@@@@@@@@@ 푸터 페이지 변경 x @@@@@@@@@@@@@@@@@@@@@@@@ -->
+            <!-- 첸노 푸터 start -->
+            <footer id="ft">
+                <div class="ft_box">
+                    <div class="ft_top">
+                        <div class="ft_top__in">
+                            <div class="ft_menu">
+                                <a href="" class="ft_link">기업소개</a>
+                                <a href="" class="ft_link">개인정보취급방침</a>
+                                <a href="" class="ft_link">이메일무단수집거부</a>
+                            </div>
+                            <div class="ft_sns">
+                                <a href="" class="ft_sns__link"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="" class="ft_sns__link"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="" class="ft_sns__link"><i class="fa-brands fa-youtube"></i></a>
+                                <a href="" class="ft_sns__link"><i class="fa-solid fa-blog"></i></a>
+                            </div>
+                        </div>
+        
+                    </div>
+        
+                    <div class="ft_bottom">
+                        <div class="ft_bottom__left">
+                            <a href="" class="logo"><img src="./img/ft_logo.png" alt=""></a>
+        
+                            <div class="ft_text">
+                                <span class="ft_txt ft_txt1">주식회사 첸노 | 대표자 : 고성욱</span>
+                                <span class="ft_txt ft_txt2">사업자등록번호 : 198 - 81 - 01168</span>
+                                <span class="ft_txt ft_txt3">주소 : 대전광역시 서구 둔산대로 117번길 95<br class="mobile">(리더스타운, 7층)</span>
+                                <span class="copyright">COPYRIGHTⓒ 2022 CENNO CO.,INC. ALL RIGHT RESERVED.</span>
+                            </div>
+                        </div>
+        
+                        <div class="ft_bottom__right">
+                            <div class="ft_right__tit">
+                                <span>CS CENTER</span>
+                            </div>
+                            <div class="ft_cscenter">
+                                <span class="cs_list tel"><a href="tel:042-489-7994">Tel : 042 - 489 - 7994</a></span>
+                                <span class="cs_list fax">Fax : 042 - 489 - 7995</span>
+                                <span class="cs_list email">E-mail : cenno@cenno.co.kr</span>
+                            </div>
+                            <div class="ft_cscenter__time">
+                                <span class="ft_time">평일 : 09:00 ~ 17:30</span>
+                                <span class="ft_time">점심 : 13:00 ~ 14:00</span>
+                            </div>
+                        </div>
+        
+                    </div>
+                </div>
+            </footer>
+            <!-- 첸노 푸터 end -->
+            <!-- @@@@@@@@@@@@@@@@@@@@@@@@ 푸터 페이지 변경 x @@@@@@@@@@@@@@@@@@@@@@@@ -->
+    
+</body>
+</html>
